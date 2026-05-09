@@ -1,108 +1,424 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Alejandro Damian-Serrano</title>
+    <base href="./">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    
+    <title>About Me — Alejandro Damian-Serrano, Ph.D.</title>
+    
+    <link rel="icon" type="image/x-icon" href="https://images.squarespace-cdn.com/content/v1/6025ab22a616010b68cda8b9/1613159815822-TFB32N2OLDQHGRJUVJBV/favicon.ico">
+    <link rel="canonical" href="https://www.alejandrodamianserrano.science/about-me">
+    
+    <meta property="og:site_name" content="Alejandro Damian-Serrano, Ph.D.">
+    <meta property="og:title" content="About Me — Alejandro Damian-Serrano, Ph.D.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="http://static1.squarespace.com/static/6025ab22a616010b68cda8b9/t/6026da31469b3b5765b82223/1613158978136/image2.png?format=1500w">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700">
+    <link rel="stylesheet" type="text/css" href="css/site.css">
+    <link rel="stylesheet" type="text/css" href="css/static.css">
+    
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #fdfdfd;
-            color: #333;
-            line-height: 1.7;
-            margin: 0;
-            padding: 0;
+        .top-bun, .patty, .bottom-bun {
+            height: 1px;
         }
-
-        header {
-            background-color: #1a1a1a;
-            color: #fff;
-            text-align: center;
-            padding: 50px 20px;
+        
+        /* Hero section specific styles */
+        .hero-section {
+            position: relative;
+            min-height: 60vh;
         }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.8em;
+        
+        .hero-section .section-background img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 50%;
         }
-
-        header p {
-            font-size: 1.2em;
-            margin-top: 10px;
-            font-style: italic;
+        
+        /* Portrait image styles */
+        .portrait-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 50%;
         }
-
-        main {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-
-        section {
-            margin-bottom: 40px;
-        }
-
-        h2 {
-            color: #1a1a1a;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 5px;
-            margin-bottom: 15px;
-        }
-
-        p {
-            margin-bottom: 15px;
-        }
-
-        ul {
-            margin: 10px 0 20px 20px;
-        }
-
-        footer {
-            text-align: center;
-            color: #777;
-            padding: 20px 0;
-            border-top: 1px solid #ddd;
-            font-size: 0.9em;
+        
+        .portrait-wrapper {
+            overflow: hidden;
+            -webkit-mask-image: -webkit-radial-gradient(white, black);
+            position: relative;
+            width: 100%;
+            height: 100%;
         }
     </style>
 </head>
-<body>
 
-<header>
-    <h1>Alejandro Damian-Serrano</h1>
-    <p>Marine Invertebrate Enthusiast & Researcher</p>
-</header>
+<body id="collection-about-me" class="black-bold" tabindex="-1">
+    <div id="siteWrapper" class="clearfix site-wrapper">
+        
+        <header data-test="header" id="header" class="black-bold header theme-col--primary" data-section-theme="black-bold">
+            <div class="header-announcement-bar-wrapper">
+                <a href="#page" class="header-skip-link sqs-button-element--primary">Skip to Content</a>
+                
+                <div class="header-inner container--fluid header-mobile-layout-logo-left-nav-right header-layout-nav-right" data-test="header-inner">
+                    <div class="header-background theme-bg--primary"></div>
 
-<main>
-    <section>
-        <h2>My Fascination</h2>
-        <p>I am fascinated by the diversity of forms and behaviors among open-ocean invertebrates. While marine vertebrates are fast, smart, robust, and successful as torpedoes with a frontal mouth, there are many equally successful animals that are weak, slow, small, soft, and delicate — living in the daunting, vast, structureless void of the midwater. Evolution has produced extremely creative and fascinating ways of surviving in this environment.</p>
-    </section>
+                    <!-- Desktop Header -->
+                    <div class="header-display-desktop" data-content-field="site-title">
+                        <div class="header-title-nav-wrapper">
+                            <div class="header-title" data-animation-role="header-element">
+                                <div class="header-title-text">
+                                    <a id="site-title" href="index.html" data-animation-role="header-element">Alejandro Damian-Serrano, Ph.D.</a>
+                                </div>
+                            </div>
+                            
+                            <div class="header-nav">
+                                <div class="header-nav-wrapper">
+                                    <nav class="header-nav-list">
+                                        <div class="header-nav-item header-nav-item--collection">
+                                            <a href="curriculum-vitae.html">CV</a>
+                                        </div>
+                                        <div class="header-nav-item header-nav-item--collection">
+                                            <a href="publications.html">Publications</a>
+                                        </div>
+                                        <div class="header-nav-item header-nav-item--collection">
+                                            <a href="talks.html">Talks</a>
+                                        </div>
+                                        <div class="header-nav-item header-nav-item--collection">
+                                            <a href="media.html">Media</a>
+                                        </div>
+                                        <div class="header-nav-item header-nav-item--collection header-nav-item--active">
+                                            <a href="about-me.html" aria-current="page">About Me</a>
+                                        </div>
+                                        <div class="header-nav-item header-nav-item--collection header-nav-item--homepage">
+                                            <a href="index.html">Home</a>
+                                        </div>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="header-actions header-actions--right">
+                            <div class="header-actions-action header-actions-action--social">
+                                <a class="icon icon--fill header-icon" href="https://www.linkedin.com/in/alejandro-dami%C3%A1n-serrano-b0925162/" target="_blank" aria-label="LinkedIn">
+                                    <svg viewBox="23 23 64 64">
+                                        <use xlink:href="#linkedin-unauth-icon" width="110" height="110"></use>
+                                    </svg>
+                                </a>
+                                <a class="icon icon--fill header-icon" href="https://twitter.com/planktomancer" target="_blank" aria-label="Twitter">
+                                    <svg viewBox="23 23 64 64">
+                                        <use xlink:href="#twitter-unauth-icon" width="110" height="110"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
 
-    <section>
-        <h2>Academic Background</h2>
-        <p>I earned my Ph.D. in Ecology & Evolutionary Biology from Yale University in 2021, focused on siphonophore diets, the evolution of their tentacle prey-capture apparatus, and the roles of vertical distribution and prey selection in their trophic ecology. I then did a postdoc in the Sutherland Lab at the Institute of Ecology and Evolution at the University of Oregon, focused on the evolution of colonial architecture in salps and its relationship to swimming performance. For every group of marine pelagic invertebrates, my primary research interest has been the diversity of forms, understanding its evolutionary history, and how this diversity impacts their ecological roles in the ecosystem.</p>
-    </section>
+                        <!-- Burger Menu -->
+                        <div class="header-burger menu-overlay-has-visible-non-navigation-items" data-animation-role="header-element">
+                            <button class="header-burger-btn burger" data-test="header-burger">
+                                <span class="js-header-burger-open-title visually-hidden">Open Menu</span>
+                                <span hidden class="js-header-burger-close-title visually-hidden">Close Menu</span>
+                                <div class="burger-box">
+                                    <div class="burger-inner header-menu-icon-doubleLineHamburger">
+                                        <div class="top-bun"></div>
+                                        <div class="patty"></div>
+                                        <div class="bottom-bun"></div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
 
-    <section>
-        <h2>Current Work</h2>
-        <p>I am back in Spain and no longer pursuing an academic career. However, I am open to collaborating on projects as a coauthor. I am open to working as a marine zooplankton research technician or in invertebrate zoology collections at museums of natural history. I am currently working as a Microscopy and Immunohistochemistry Technician at the Biomedicine Research and Innovation Institute of the University of Cádiz (Cádiz, Spain).</p>
-    </section>
+                    <!-- Mobile Header -->
+                    <div class="header-display-mobile" data-content-field="site-title">
+                        <div class="header-title-nav-wrapper">
+                            <div class="header-title" data-animation-role="header-element">
+                                <div class="header-title-text">
+                                    <a id="site-title" href="index.html" data-animation-role="header-element">Alejandro Damian-Serrano, Ph.D.</a>
+                                </div>
+                            </div>
+                            
+                            <div class="header-nav">
+                                <div class="header-nav-wrapper">
+                                    <nav class="header-nav-list">
+                                        <div class="header-nav-item header-nav-item--collection">
+                                            <a href="curriculum-vitae.html" data-animation-role="header-element">CV</a>
+                                        </div>
+                                        <div class="header-nav-item header-nav-item--collection">
+                                            <a href="publications.html" data-animation-role="header-element">Publications</a>
+                                        </div>
+                                        <div class="header-nav-item header-nav-item--collection">
+                                            <a href="talks.html" data-animation-role="header-element">Talks</a>
+                                        </div>
+                                        <div class="header-nav-item header-nav-item--collection">
+                                            <a href="media.html" data-animation-role="header-element">Media</a>
+                                        </div>
+                                        <div class="header-nav-item header-nav-item--collection header-nav-item--active">
+                                            <a href="about-me.html" data-animation-role="header-element" aria-current="page">About Me</a>
+                                        </div>
+                                        <div class="header-nav-item header-nav-item--collection header-nav-item--homepage">
+                                            <a href="index.html" data-animation-role="header-element">Home</a>
+                                        </div>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="header-actions header-actions--right">
+                            <div class="header-actions-action header-actions-action--social">
+                                <a class="icon icon--fill header-icon" href="https://www.linkedin.com/in/alejandro-dami%C3%A1n-serrano-b0925162/" target="_blank" aria-label="LinkedIn">
+                                    <svg viewBox="23 23 64 64">
+                                        <use xlink:href="#linkedin-unauth-icon" width="110" height="110"></use>
+                                    </svg>
+                                </a>
+                                <a class="icon icon--fill header-icon" href="https://twitter.com/planktomancer" target="_blank" aria-label="Twitter">
+                                    <svg viewBox="23 23 64 64">
+                                        <use xlink:href="#twitter-unauth-icon" width="110" height="110"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
 
-    <section>
-        <h2>Personal Background</h2>
-        <p>I was born and raised in Valencia, Spain. I have always been an avid naturalist for the weird and underappreciated creatures of the world. As a teenager, I started SCUBA diving and discovered the astonishing oddity and diversity of marine invertebrates, which soon became my special interest.</p>
-    </section>
+                        <!-- Burger Menu -->
+                        <div class="header-burger menu-overlay-has-visible-non-navigation-items" data-animation-role="header-element">
+                            <button class="header-burger-btn burger" data-test="header-burger">
+                                <span class="js-header-burger-open-title visually-hidden">Open Menu</span>
+                                <span hidden class="js-header-burger-close-title visually-hidden">Close Menu</span>
+                                <div class="burger-box">
+                                    <div class="burger-inner header-menu-icon-doubleLineHamburger">
+                                        <div class="top-bun"></div>
+                                        <div class="patty"></div>
+                                        <div class="bottom-bun"></div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <section>
-        <h2>Hobbies & Interests</h2>
-        <p>I love exploring nature, cooking paella, collecting lichens and arthropods, playing fantasy RPG games, archery, singing karaoke, as well as playing piano, guitar, & ukulele.</p>
-    </section>
-</main>
+            <!-- Mobile Menu Navigation -->
+            <div class="header-menu header-menu--folder-list" data-section-theme="">
+                <div class="header-menu-bg theme-bg--primary"></div>
+                <div class="header-menu-nav">
+                    <nav class="header-menu-nav-list">
+                        <div data-folder="root" class="header-menu-nav-folder header-menu-nav-folder--active">
+                            <div class="header-menu-nav-folder-content">
+                                <div class="header-menu-nav-wrapper">
+                                    <div class="container header-menu-nav-item header-menu-nav-item--collection">
+                                        <a href="curriculum-vitae.html"><div class="header-menu-nav-item-content">CV</div></a>
+                                    </div>
+                                    <div class="container header-menu-nav-item header-menu-nav-item--collection">
+                                        <a href="publications.html"><div class="header-menu-nav-item-content">Publications</div></a>
+                                    </div>
+                                    <div class="container header-menu-nav-item header-menu-nav-item--collection">
+                                        <a href="talks.html"><div class="header-menu-nav-item-content">Talks</div></a>
+                                    </div>
+                                    <div class="container header-menu-nav-item header-menu-nav-item--collection">
+                                        <a href="media.html"><div class="header-menu-nav-item-content">Media</div></a>
+                                    </div>
+                                    <div class="container header-menu-nav-item header-menu-nav-item--collection header-menu-nav-item--active">
+                                        <a href="about-me.html" aria-current="page"><div class="header-menu-nav-item-content">About Me</div></a>
+                                    </div>
+                                    <div class="container header-menu-nav-item header-menu-nav-item--collection header-menu-nav-item--homepage">
+                                        <a href="index.html"><div class="header-menu-nav-item-content">Home</div></a>
+                                    </div>
+                                </div>
+                                
+                                <div class="header-menu-actions social-accounts">
+                                    <div class="header-menu-actions-action header-menu-actions-action--social mobile">
+                                        <a class="icon icon--lg icon--fill header-icon" href="https://www.linkedin.com/in/alejandro-dami%C3%A1n-serrano-b0925162/" target="_blank" aria-label="LinkedIn">
+                                            <svg viewBox="23 23 64 64">
+                                                <use xlink:href="#linkedin-unauth-icon" width="110" height="110"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="header-menu-actions-action header-menu-actions-action--social mobile">
+                                        <a class="icon icon--lg icon--fill header-icon" href="https://twitter.com/planktomancer" target="_blank" aria-label="Twitter">
+                                            <svg viewBox="23 23 64 64">
+                                                <use xlink:href="#twitter-unauth-icon" width="110" height="110"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
 
-<footer>
-    &copy; 2026 Alejandro Damian-Serrano
-</footer>
+        <main id="page" class="container" role="main">
+            <article class="sections" id="sections" data-page-sections="about-me">
+                
+                <!-- Hero Section with Background Image -->
+                <section data-test="page-section" data-section-theme="black-bold" class="page-section hero-section layout-engine-section background-width--full-bleed section-height--medium content-width--medium horizontal-alignment--center vertical-alignment--middle has-background black-bold">
+                    <div class="section-border">
+                        <div class="section-background">
+                            <img src="https://images.squarespace-cdn.com/content/v1/6025ab22a616010b68cda8b9/1613146781213-A52NRWKVQDLAVTV43QX6/46468551_10217879586809297_8554764307403898880_o.jpg" 
+                                 alt="Alejandro diving underwater" 
+                                 srcset="https://images.squarespace-cdn.com/content/v1/6025ab22a616010b68cda8b9/1613146781213-A52NRWKVQDLAVTV43QX6/46468551_10217879586809297_8554764307403898880_o.jpg?format=100w 100w,
+                                         https://images.squarespace-cdn.com/content/v1/6025ab22a616010b68cda8b9/1613146781213-A52NRWKVQDLAVTV43QX6/46468551_10217879586809297_8554764307403898880_o.jpg?format=300w 300w,
+                                         https://images.squarespace-cdn.com/content/v1/6025ab22a616010b68cda8b9/1613146781213-A52NRWKVQDLAVTV43QX6/46468551_10217879586809297_8554764307403898880_o.jpg?format=500w 500w,
+                                         https://images.squarespace-cdn.com/content/v1/6025ab22a616010b68cda8b9/1613146781213-A52NRWKVQDLAVTV43QX6/46468551_10217879586809297_8554764307403898880_o.jpg?format=750w 750w,
+                                         https://images.squarespace-cdn.com/content/v1/6025ab22a616010b68cda8b9/1613146781213-A52NRWKVQDLAVTV43QX6/46468551_10217879586809297_8554764307403898880_o.jpg?format=1000w 1000w,
+                                         https://images.squarespace-cdn.com/content/v1/6025ab22a616010b68cda8b9/1613146781213-A52NRWKVQDLAVTV43QX6/46468551_10217879586809297_8554764307403898880_o.jpg?format=1500w 1500w,
+                                         https://images.squarespace-cdn.com/content/v1/6025ab22a616010b68cda8b9/1613146781213-A52NRWKVQDLAVTV43QX6/46468551_10217879586809297_8554764307403898880_o.jpg?format=2500w 2500w"
+                                 sizes="100vw">
+                            <div class="section-background-overlay" style="opacity: 0;"></div>
+                        </div>
+                    </div>
+                    <div class="content-wrapper">
+                        <div class="content">
+                            <div class="sqs-layout sqs-grid-12 columns-12">
+                                <div class="row sqs-row">
+                                    <div class="col sqs-col-12 span-12">
+                                        <div class="sqs-block html-block sqs-block-html">
+                                            <div class="sqs-block-content">
+                                                <div class="sqs-html-content">
+                                                    <h1 style="text-align: center; white-space: pre-wrap;">About Me</h1>
+                                                    <p style="text-align: right; white-space: pre-wrap;" class="sqsrte-small">Photo credit: Claudio Ceresi</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
+                <!-- Bio Content Section -->
+                <section data-test="page-section" data-section-theme="black-bold" class="page-section layout-engine-section background-width--full-bleed section-height--medium content-width--wide horizontal-alignment--center vertical-alignment--middle black-bold">
+                    <div class="section-border">
+                        <div class="section-background"></div>
+                    </div>
+                    <div class="content-wrapper">
+                        <div class="content">
+                            <div class="sqs-layout sqs-grid-12 columns-12">
+                                <div class="row sqs-row">
+                                    <!-- Main Bio Text -->
+                                    <div class="col sqs-col-12 span-12">
+                                        <div class="sqs-block html-block sqs-block-html">
+                                            <div class="sqs-block-content">
+                                                <div class="sqs-html-content">
+                                                    <p style="text-align: center; white-space: pre-wrap;">I am fascinated by the diversity of forms and behaviors among open-ocean invertebrates. While marine vertebrates are fast, smart, robust, and successful as torpedoes with a frontal mouth, there are many equally-successful animals that are weak, slow, small, soft, and delicate — living in the daunting, vast, structureless void of the midwater. Evolution has produced extremely creative and fascinating ways of surviving in this environment.</p>
+                                                    
+                                                    <p style="text-align: center; white-space: pre-wrap;">I am an Adjunct Professor at the University of Oregon teaching an undergraduate course in Animal Form & Function. I earned my Ph.D. in <a href="https://eeb.yale.edu/people/graduate-students" target="_blank">Ecology & Evolutionary Biology</a> from Yale University in 2021, focused on siphonophore diets, the evolution of their tentacle prey-capture apparatus, and the roles of vertical distribution and prey selection in their trophic ecology. I then did a postdoc in the <a href="https://www.sutherlandlab.org/" target="_blank">Sutherland Lab</a> at the Institute of Ecology and Evolution at the University of Oregon, focused on the evolution of colonial architecture in salps and its relationship to swimming performance. For every group of marine pelagic invertebrates, my primary research interest has been the diversity of forms, understanding its evolutionary history, and how this diversity impacts their ecological roles in the ecosystem.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Personal Info Row -->
+                                <div class="row sqs-row" style="margin-top: 3rem;">
+                                    <!-- Portrait Photo -->
+                                    <div class="col sqs-col-4 span-4">
+                                        <div class="sqs-block image-block sqs-block-image">
+                                            <div class="sqs-block-content">
+                                                <figure class="sqs-block-image-figure">
+                                                    <div class="portrait-wrapper">
+                                                        <img src="https://images.squarespace-cdn.com/content/v1/6025ab22a616010b68cda8b9/788558c6-0ca6-4aee-b59e-10e5fd2e66bc/UOphotoPortrait.jpg" 
+                                                             alt="Alejandro Damian-Serrano Portrait"
+                                                             class="portrait-image"
+                                                             srcset="https://images.squarespace-cdn.com/content/v1/6025ab22a616010b68cda8b9/788558c6-0ca6-4aee-b59e-10e5fd2e66bc/UOphotoPortrait.jpg?format=100w 100w,
+                                                                     https://images.squarespace-cdn.com/content/v1/6025ab22a616010b68cda8b9/788558c6-0ca6-4aee-b59e-10e5fd2e66bc/UOphotoPortrait.jpg?format=300w 300w,
+                                                                     https://images.squarespace-cdn.com/content/v1/6025ab22a616010b68cda8b9/788558c6-0ca6-4aee-b59e-10e5fd2e66bc/UOphotoPortrait.jpg?format=500w 500w,
+                                                                     https://images.squarespace-cdn.com/content/v1/6025ab22a616010b68cda8b9/788558c6-0ca6-4aee-b59e-10e5fd2e66bc/UOphotoPortrait.jpg?format=750w 750w,
+                                                                     https://images.squarespace-cdn.com/content/v1/6025ab22a616010b68cda8b9/788558c6-0ca6-4aee-b59e-10e5fd2e66bc/UOphotoPortrait.jpg?format=1000w 1000w,
+                                                                     https://images.squarespace-cdn.com/content/v1/6025ab22a616010b68cda8b9/788558c6-0ca6-4aee-b59e-10e5fd2e66bc/UOphotoPortrait.jpg?format=1500w 1500w"
+                                                             loading="lazy">
+                                                    </div>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Personal Bio Text -->
+                                    <div class="col sqs-col-8 span-8">
+                                        <div class="sqs-block html-block sqs-block-html">
+                                            <div class="sqs-block-content">
+                                                <div class="sqs-html-content">
+                                                    <p class="sqsrte-large" style="white-space: pre-wrap;">I was born and raised in Valencia, Spain. I have always been an avid naturalist for the weird and underappreciated creatures of the world. As a teenager, I started SCUBA diving and discovered the astonishing oddity and diversity of marine invertebrates, which soon became my special interest.</p>
+                                                    
+                                                    <p class="sqsrte-large" style="white-space: pre-wrap; margin-top: 1.5rem;">I love exploring nature, cooking paella, collecting lichens and arthropods, playing fantasy RPG games, archery, singing karaoke, as well as playing piano, guitar, & ukulele.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </article>
+        </main>
+
+        <!-- Footer -->
+        <footer class="sections" id="footer-sections">
+            <section data-test="page-section" data-section-theme="dark" class="page-section layout-engine-section background-width--full-bleed content-width--wide horizontal-alignment--center vertical-alignment--middle dark" style="min-height: 20vh;">
+                <div class="section-border">
+                    <div class="section-background"></div>
+                </div>
+                <div class="content-wrapper">
+                    <div class="content">
+                        <div class="sqs-layout sqs-grid-12 columns-12">
+                            <div class="row sqs-row">
+                                <div class="col sqs-col-12 span-12">
+                                    <div class="sqs-block html-block sqs-block-html">
+                                        <div class="sqs-block-content">
+                                            <div class="sqs-html-content">
+                                                <p style="text-align: center;">1479 Onyx Bridge, Institute of Ecology and Evolution, University of Oregon, Eugene OR, 97401 | adamians@uoregon.edu</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sqs-block socialaccountlinks-v2-block sqs-block-socialaccountlinks-v2">
+                                        <div class="sqs-block-content">
+                                            <div class="sqs-svg-icon--outer social-icon-alignment-center social-icons-size-small">
+                                                <nav class="sqs-svg-icon--list">
+                                                    <a href="https://www.linkedin.com/in/alejandro-dami%C3%A1n-serrano-b0925162/" target="_blank" class="sqs-svg-icon--wrapper linkedin-unauth" aria-label="LinkedIn">
+                                                        <div>
+                                                            <svg class="sqs-svg-icon--social" viewBox="0 0 64 64">
+                                                                <use class="sqs-use--icon" xlink:href="#linkedin-unauth-icon"></use>
+                                                            </svg>
+                                                        </div>
+                                                    </a>
+                                                    <a href="https://twitter.com/planktomancer" target="_blank" class="sqs-svg-icon--wrapper twitter-unauth" aria-label="Twitter">
+                                                        <div>
+                                                            <svg class="sqs-svg-icon--social" viewBox="0 0 64 64">
+                                                                <use class="sqs-use--icon" xlink:href="#twitter-unauth-icon"></use>
+                                                            </svg>
+                                                        </div>
+                                                    </a>
+                                                </nav>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </div>
+
+    <!-- SVG Icons -->
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display:none">
+        <symbol id="linkedin-unauth-icon" viewBox="0 0 64 64">
+            <path d="M20.4,44h5.4V26.6h-5.4V44z M23.1,18c-1.7,0-3.1,1.4-3.1,3.1c0,1.7,1.4,3.1,3.1,3.1 c1.7,0,3.1-1.4,3.1-3.1C26.2,19.4,24.8,18,23.1,18z M39.5,26.2c-2.6,0-4.4,1.4-5.1,2.8h-0.1v-2.4h-5.2V44h5.4v-8.6 c0-2.3,0.4-4.5,3.2-4.5c2.8,0,2.8,2.6,2.8,4.6V44H46v-9.5C46,29.8,45,26.2,39.5,26.2z"></path>
+        </symbol>
+        <symbol id="twitter-unauth-icon" viewBox="0 0 64 64">
+            <path d="M48,22.1c-1.2,0.5-2.4,0.9-3.8,1c1.4-0.8,2.4-2.1,2.9-3.6c-1.3,0.8-2.7,1.3-4.2,1.6 C41.7,19.8,40,19,38.2,19c-3.6,0-6.6,2.9-6.6,6.6c0,0.5,0.1,1,0.2,1.5c-5.5-0.3-10.3-2.9-13.5-6.9c-0.6,1-0.9,2.1-0.9,3.3 c0,2.3,1.2,4.3,2.9,5.5c-1.1,0-2.1-0.3-3-0.8c0,0,0,0.1,0,0.1c0,3.2,2.3,5.8,5.3,6.4c-0.6,0.1-1.1,0.2-1.7,0.2c-0.4,0-0.8,0-1.2-0.1 c0.8,2.6,3.3,4.5,6.1,4.6c-2.2,1.8-5.1,2.8-8.2,2.8c-0.5,0-1.1,0-1.6-0.1c2.9,1.9,6.4,2.9,10.1,2.9c12.1,0,18.7-10,18.7-18.7 c0-0.3,0-0.6,0-0.8C46,24.5,47.1,23.4,48,22.1z"></path>
+        </symbol>
+    </svg>
+
+    <script src="js/site.js"></script>
 </body>
 </html>
