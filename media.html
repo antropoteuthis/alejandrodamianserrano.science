@@ -1,16 +1,16 @@
 <!doctype html>
 <html xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" lang="en-US">
   <head>
-	<base href="./">
-	<script src="js/rerouter.js"></script>
+    <base href="./">
+    <script src="js/rerouter.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8" />
-    <title>Media &mdash; Alejandro Damian-Serrano, Ph.D.</title>
+    <title>Communications &mdash; Alejandro Damian-Serrano, Ph.D.</title>
     <link rel="icon" type="image/x-icon" href="https://images.squarespace-cdn.com/content/v1/6025ab22a616010b68cda8b9/1613159815822-TFB32N2OLDQHGRJUVJBV/favicon.ico"/>
-    <link rel="canonical" href="https://www.alejandrodamianserrano.science/media"/>
+    <link rel="canonical" href="https://www.alejandrodamianserrano.science/communications"/>
     <meta property="og:site_name" content="Alejandro Damian-Serrano, Ph.D."/>
-    <meta property="og:title" content="Media &mdash; Alejandro Damian-Serrano, Ph.D."/>
+    <meta property="og:title" content="Communications &mdash; Alejandro Damian-Serrano, Ph.D."/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700">
     <link rel="stylesheet" type="text/css" href="css/site.css"/>
@@ -22,93 +22,20 @@
       .bottom-bun {
         height: 1px;
       }
-      
-      .media-card {
-        display: flex;
-        align-items: center;
-        gap: 40px;
-        margin: 60px 0;
-        background: rgba(0,0,0,0.8);
-        padding: 30px;
-        border-radius: 8px;
-      }
-      
-      .media-card.right-image {
-        flex-direction: row;
-      }
-      
-      .media-card.left-image {
-        flex-direction: row-reverse;
-      }
-      
-      .media-image {
-        flex: 0 0 45%;
-        max-width: 45%;
-      }
-      
-      .media-image img {
-        width: 100%;
-        height: auto;
-        display: block;
-        border-radius: 4px;
-      }
-      
-      .media-content {
-        flex: 1;
-        color: #fff;
-      }
-      
-      .media-content h4 {
-        font-size: 1.4rem;
-        margin-bottom: 15px;
-        font-weight: 600;
-        line-height: 1.4;
-      }
-      
-      .media-content p {
-        font-size: 1rem;
-        line-height: 1.6;
-        margin-bottom: 10px;
-      }
-      
-      .media-content em {
-        color: #ccc;
-      }
-      
-      .media-content a {
-        color: #6eb4ff;
-        text-decoration: none;
-      }
-      
-      .media-content a:hover {
-        text-decoration: underline;
-      }
-      
-      @media (max-width: 768px) {
-        .media-card,
-        .media-card.right-image,
-        .media-card.left-image {
-          flex-direction: column !important;
-        }
-        
-        .media-image {
-          flex: 0 0 100%;
-          max-width: 100%;
-        }
-      }
     </style>
   </head>
 
-  <body id="collection-media" class="dark" tabindex="-1">
+  <body id="collection-communications" class="black-bold" tabindex="-1">
     <div id="siteWrapper" class="clearfix site-wrapper">
       
-      <header data-test="header" id="header" class="dark header theme-col--primary" data-section-theme="dark">
+      <header data-test="header" id="header" class="black-bold header theme-col--primary" data-section-theme="black-bold">
         <div class="header-announcement-bar-wrapper">
           <a href="#page" class="header-skip-link sqs-button-element--primary">Skip to Content</a>
           
           <div class="header-inner container--fluid header-mobile-layout-logo-left-nav-right header-layout-nav-right" data-test="header-inner">
             <div class="header-background theme-bg--primary"></div>
 
+            <!-- Desktop Header -->
             <div class="header-display-desktop" data-content-field="site-title">
               <div class="header-title-nav-wrapper">
                 <div class="header-title" data-animation-role="header-element">
@@ -126,11 +53,11 @@
                       <div class="header-nav-item header-nav-item--collection">
                         <a href="publications.html">Publications</a>
                       </div>
-                      <div class="header-nav-item header-nav-item--collection">
-                        <a href="talks.html">Talks</a>
-                      </div>
                       <div class="header-nav-item header-nav-item--collection header-nav-item--active">
-                        <a href="media.html" aria-current="page">Media</a>
+                        <a href="communications.html" aria-current="page">Talks</a>
+                      </div>
+                      <div class="header-nav-item header-nav-item--collection">
+                        <a href="media.html">Media</a>
                       </div>
                       <div class="header-nav-item header-nav-item--collection">
                         <a href="about-me.html">About Me</a>
@@ -158,8 +85,19 @@
                 </div>
               </div>
 
-              <div class="header-burger">
-                <button class="header-burger-btn burger">
+              <style>
+                .top-bun, 
+                .patty, 
+                .bottom-bun {
+                  height: 1px;
+                }
+              </style>
+
+              <!-- Burger -->
+              <div class="header-burger menu-overlay-has-visible-non-navigation-items preFade" data-animation-role="header-element">
+                <button class="header-burger-btn burger" data-test="header-burger">
+                  <span class="js-header-burger-open-title visually-hidden">Open Menu</span>
+                  <span hidden="" class="js-header-burger-close-title visually-hidden">Close Menu</span>
                   <div class="burger-box">
                     <div class="burger-inner header-menu-icon-doubleLineHamburger">
                       <div class="top-bun"></div>
@@ -171,11 +109,37 @@
               </div>
             </div>
 
+            <!-- Mobile Header -->
             <div class="header-display-mobile" data-content-field="site-title">
               <div class="header-title-nav-wrapper">
-                <div class="header-title">
+                <div class="header-title preFade" data-animation-role="header-element">
                   <div class="header-title-text">
-                    <a id="site-title" href="index.html">Alejandro Damian-Serrano, Ph.D.</a>
+                    <a id="site-title" href="index.html" data-animation-role="header-element" class="preFade">Alejandro Damian-Serrano, Ph.D.</a>
+                  </div>
+                </div>
+                
+                <div class="header-nav">
+                  <div class="header-nav-wrapper">
+                    <nav class="header-nav-list">
+                      <div class="header-nav-item header-nav-item--collection">
+                        <a href="curriculum-vitae.html" data-animation-role="header-element" class="preFade">CV</a>
+                      </div>
+                      <div class="header-nav-item header-nav-item--collection">
+                        <a href="publications.html" data-animation-role="header-element" class="preFade">Publications</a>
+                      </div>
+                      <div class="header-nav-item header-nav-item--collection header-nav-item--active">
+                        <a href="communications.html" data-animation-role="header-element" aria-current="page" class="preFade">Talks</a>
+                      </div>
+                      <div class="header-nav-item header-nav-item--collection">
+                        <a href="media.html" data-animation-role="header-element" class="preFade">Media</a>
+                      </div>
+                      <div class="header-nav-item header-nav-item--collection">
+                        <a href="about-me.html" data-animation-role="header-element" class="preFade">About Me</a>
+                      </div>
+                      <div class="header-nav-item header-nav-item--collection header-nav-item--homepage">
+                        <a href="index.html" data-animation-role="header-element" class="preFade">Home</a>
+                      </div>
+                    </nav>
                   </div>
                 </div>
               </div>
@@ -195,8 +159,19 @@
                 </div>
               </div>
 
-              <div class="header-burger">
-                <button class="header-burger-btn burger">
+              <style>
+                .top-bun, 
+                .patty, 
+                .bottom-bun {
+                  height: 1px;
+                }
+              </style>
+
+              <!-- Burger -->
+              <div class="header-burger menu-overlay-has-visible-non-navigation-items preFade" data-animation-role="header-element">
+                <button class="header-burger-btn burger" data-test="header-burger">
+                  <span class="js-header-burger-open-title visually-hidden">Open Menu</span>
+                  <span hidden="" class="js-header-burger-close-title visually-hidden">Close Menu</span>
                   <div class="burger-box">
                     <div class="burger-inner header-menu-icon-doubleLineHamburger">
                       <div class="top-bun"></div>
@@ -209,29 +184,91 @@
             </div>
           </div>
         </div>
+
+        <!-- Mobile Menu Navigation -->
+        <div class="header-menu header-menu--folder-list" data-section-theme="" data-current-styles="">
+          <div class="header-menu-bg theme-bg--primary"></div>
+          <div class="header-menu-nav">
+            <nav class="header-menu-nav-list">
+              <div data-folder="root" class="header-menu-nav-folder header-menu-nav-folder--active">
+                <div class="header-menu-nav-folder-content">
+                  <div class="header-menu-nav-wrapper">
+                    <div class="container header-menu-nav-item header-menu-nav-item--collection">
+                      <a href="curriculum-vitae.html">
+                        <div class="header-menu-nav-item-content">CV</div>
+                      </a>
+                    </div>
+                    <div class="container header-menu-nav-item header-menu-nav-item--collection">
+                      <a href="publications.html">
+                        <div class="header-menu-nav-item-content">Publications</div>
+                      </a>
+                    </div>
+                    <div class="container header-menu-nav-item header-menu-nav-item--collection header-menu-nav-item--active">
+                      <a href="communications.html" aria-current="page">
+                        <div class="header-menu-nav-item-content">Talks</div>
+                      </a>
+                    </div>
+                    <div class="container header-menu-nav-item header-menu-nav-item--collection">
+                      <a href="media.html">
+                        <div class="header-menu-nav-item-content">Media</div>
+                      </a>
+                    </div>
+                    <div class="container header-menu-nav-item header-menu-nav-item--collection">
+                      <a href="about-me.html">
+                        <div class="header-menu-nav-item-content">About Me</div>
+                      </a>
+                    </div>
+                    <div class="container header-menu-nav-item header-menu-nav-item--collection header-menu-nav-item--homepage">
+                      <a href="index.html">
+                        <div class="header-menu-nav-item-content">Home</div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="header-menu-actions social-accounts">
+                  <div class="header-menu-actions-action header-menu-actions-action--social mobile">
+                    <a class="icon icon--lg icon--fill header-icon" href="https://www.linkedin.com/in/alejandro-dami%C3%A1n-serrano-b0925162/" target="_blank" aria-label="LinkedIn">
+                      <svg viewBox="23 23 64 64">
+                        <use xlink:href="#linkedin-unauth-icon" width="110" height="110"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="header-menu-actions-action header-menu-actions-action--social mobile">
+                    <a class="icon icon--lg icon--fill header-icon" href="https://twitter.com/planktomancer" target="_blank" aria-label="Twitter">
+                      <svg viewBox="23 23 64 64">
+                        <use xlink:href="#twitter-unauth-icon" width="110" height="110"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
       </header>
 
       <main id="page" class="container" role="main">
-        <article class="sections" id="sections">
+        <article class="sections" id="sections" data-page-sections="6025acabe9d463373b4748b7">
           
           <!-- Hero Section -->
-          <section data-test="page-section" data-section-theme="white" class="page-section background-width--full-bleed section-height--medium content-width--medium horizontal-alignment--center vertical-alignment--middle has-background white">
+          <section data-test="page-section" data-section-theme="black-bold" class="page-section layout-engine-section background-width--full-bleed section-height--medium content-width--wide horizontal-alignment--center vertical-alignment--middle has-background black-bold" data-section-id="6025acabe9d463373b4748ba" data-controller="SectionWrapperController">
             <div class="section-border">
               <div class="section-background">
-                <img alt="Media background" src="images/media-hero.jpg" width="2048" height="1317" style="display:block;object-position:50% 50%;object-fit:cover;width:100%;height:100%" loading="eager">
-                <div class="section-background-overlay" style="opacity:0;"></div>
+                <img alt="" data-src="images/communications-hero.jpg" data-image="images/communications-hero.jpg" data-image-dimensions="1920x1080" data-image-focal-point="0.5129151291512916,0.6697445367805479" data-load="false" elementtiming="nbf-background" src="images/communications-hero.jpg" width="1920" height="1080" sizes="(max-width: 799px) 200vw, 100vw" style="display:block;object-position: 51.291512915129154% 66.97445367805479%" loading="eager" decoding="async" data-loader="sqs">
+                <div class="section-background-overlay" style="opacity: 0.01;"></div>
               </div>
             </div>
-            <div class="content-wrapper" style="padding:60px 20px;">
+            <div class="content-wrapper">
               <div class="content">
-                <div class="sqs-layout sqs-grid-12 columns-12">
+                <div class="sqs-layout sqs-grid-12 columns-12" data-type="page-section" id="page-section-6025acabe9d463373b4748ba">
                   <div class="row sqs-row">
                     <div class="col sqs-col-12 span-12">
-                      <div class="sqs-block html-block">
+                      <div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-fe83ac7595d03ef05801">
                         <div class="sqs-block-content">
                           <div class="sqs-html-content">
-                            <h1 style="text-align:center;white-space:pre-wrap;color:#fff;">Media</h1>
-                            <p class="sqsrte-small" style="white-space:pre-wrap;text-align:center;color:#fff;">Featured Research &amp; Outreach</p>
+                            <h1 style="text-align: center; white-space: pre-wrap;" class="preFade fadeIn">Conference Communications</h1>
+                            <p style="text-align: right; white-space: pre-wrap;" class="sqsrte-small preFade fadeIn">Photo credit: MBARI</p>
                           </div>
                         </div>
                       </div>
@@ -242,100 +279,169 @@
             </div>
           </section>
 
-          <!-- Media Items Section -->
-          <section data-test="page-section" data-section-theme="black" class="page-section background-width--full-bleed content-width--wide black" style="padding:80px 20px;background-color:#000;">
-            <div class="content-wrapper" style="max-width:1200px;margin:0 auto;">
-              
-              <!-- Media Item 1 - Right Image -->
-              <div class="media-card right-image">
-                <div class="media-image">
-                  <a href="https://www.science.org/content/article/spinning-corkscrewing-secrets-gelatinous-sea-creatures" target="_blank">
-                    <img src="images/media-science-spinning.jpg" alt="Science Magazine Feature" loading="lazy">
-                  </a>
-                </div>
-                <div class="media-content">
-                  <h4>Spinning and corkscrewing secrets of gelatinous sea creatures</h4>
-                  <p><em>Science Magazine</em> - May 2024</p>
-                  <p>Featured coverage of our research on the rotational behaviors of oceanic macroplankton, revealing new insights into how these creatures navigate the open ocean.</p>
-                  <p><a href="https://www.science.org/content/article/spinning-corkscrewing-secrets-gelatinous-sea-creatures" target="_blank">Read the full article →</a></p>
-                </div>
-              </div>
-
-              <!-- Media Item 2 - Left Image -->
-              <div class="media-card left-image">
-                <div class="media-image">
-                  <a href="https://www.youtube.com/watch?v=example2" target="_blank">
-                    <img src="images/media-mbari-video.jpg" alt="MBARI Research Video" loading="lazy">
-                  </a>
-                </div>
-                <div class="media-content">
-                  <h4>Deep-sea Siphonophore Discoveries</h4>
-                  <p><em>MBARI (Monterey Bay Aquarium Research Institute)</em> - 2023</p>
-                  <p>Documentary feature showcasing our deep-sea research on siphonophores and their role in the midwater ecosystem, filmed during ROV expeditions in Monterey Bay.</p>
-                  <p><a href="https://www.youtube.com/watch?v=example2" target="_blank">Watch the video →</a></p>
-                </div>
-              </div>
-
-              <!-- Media Item 3 - Right Image -->
-              <div class="media-card right-image">
-                <div class="media-image">
-                  <a href="#" target="_blank">
-                    <img src="images/media-salp-colonies.jpg" alt="Salp Colony Research" loading="lazy">
-                  </a>
-                </div>
-                <div class="media-content">
-                  <h4>The Architecture of Salp Colonies</h4>
-                  <p><em>Nature Research Highlights</em> - 2024</p>
-                  <p>Our groundbreaking work on salp colonial architecture and its implications for swimming efficiency was featured in Nature's research highlights.</p>
-                  <p><a href="#" target="_blank">Read more →</a></p>
+          <!-- Talk 1: UO Biology Symposium 2022 -->
+          <section data-test="page-section" data-section-theme="black-bold" class="page-section layout-engine-section background-width--full-bleed content-width--medium horizontal-alignment--center vertical-alignment--middle black-bold" data-section-id="6025acabe9d463373b4748be" data-controller="SectionWrapperController" style="min-height: 40vh;">
+            <div class="section-border">
+              <div class="section-background"></div>
+            </div>
+            <div class="content-wrapper" style="padding-top: calc(40vmax / 10); padding-bottom: calc(40vmax / 10);">
+              <div class="content">
+                <div class="sqs-layout sqs-grid-12 columns-12" data-type="page-section" id="page-section-6025acabe9d463373b4748be">
+                  <div class="row sqs-row">
+                    <div class="col sqs-col-12 span-12">
+                      <div class="sqs-block image-block sqs-block-image sqs-text-ready" data-block-type="5" id="block-yui_3_17_2_1_1666637231753_4053">
+                        <div class="sqs-block-content">
+                          <div class="image-block-outer-wrapper layout-caption-below design-layout-inline combination-animation-site-default individual-animation-site-default individual-text-animation-site-default" data-test="image-block-inline-outer-wrapper">
+                            <figure class="sqs-block-image-figure intrinsic" style="max-width:11667px;">
+                              <div class="image-block-wrapper preFade fadeIn" data-animation-role="image">
+                                <div class="sqs-image-shape-container-element has-aspect-ratio" style="position: relative; padding-bottom:85.71183776855469%; overflow: hidden;-webkit-mask-image: -webkit-radial-gradient(white, black);">
+                                  <img data-stretch="false" data-src="images/talks/uo-symposium-2022.jpg" data-image="images/talks/uo-symposium-2022.jpg" data-image-dimensions="11667x10000" data-image-focal-point="0.5,0.5" alt="" data-load="false" elementtiming="system-image-block" src="images/talks/uo-symposium-2022.jpg" width="11667" height="10000" sizes="(max-width: 640px) 100vw, (max-width: 767px) 100vw, 100vw" style="display:block;object-fit: cover; width: 100%; height: 100%; object-position: 50% 50%" onload="this.classList.add('loaded')" loading="lazy" decoding="async" data-loader="sqs">
+                                </div>
+                              </div>
+                            </figure>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-3c248a497f3c9f1b7749">
+                        <div class="sqs-block-content">
+                          <div class="sqs-html-content">
+                            <h3 style="white-space: pre-wrap;" class="preFade">UO Biology Symposium, 2022, Eugene, OR</h3>
+                            <h4 style="white-space: pre-wrap;" class="preFade">The development, evolution, and locomotory implications of salp colony architecture</h4>
+                            <p class="preFade" style="white-space: pre-wrap;">Salps are urochordates that filter-feed on microbial production in the plankton in marine pelagic ecosystems. Salps form colonies of asexually-budded individuals which swim by multi-jet propulsion. Colonies develop into species-specific architectures with distinct zooid orientations. These include transversal, oblique, linear, helical, and bipinnate chains; whorls, and clusters. These architectures vary in frontal drag, thrust ratio, and locomotory efficiency. We (1) define the salp colony morphospace, (2) characterize the developmental pathways that build the different architectures, (3) assess their hydrodynamic consequences for locomotion, and (4) reconstruct their evolutionary history. First, we defined a universal comparative set of axes and planes based on the transversal double chain arrangement found in the early-developing stages of all colonies and defined adult zooid architectures as developmental transitions from this shared stage. Development shows that the morphospace is constrained to three transformation pathways, where all architectures are either final or intermediate stages towards bipinnate, cluster, or helical forms. To measure these architectures and their hydrodynamic properties, we collected and photographed specimens of adult and developing colonies, and measured the swimming speed of different species using in situ stereo-videography. To study the evolutionary history of these architectures, we inferred a new 18S gene phylogeny, reconstructed the ancestral states using models informed by developmental constraints, and identified categorical shifts in the evolutionary change of zooid orientations. We found that linear chains are the fastest and most locomotory-efficient while clusters are the slowest and most inefficient. The ancestral salp architecture is most likely oblique or linear, with every other state being derived. While transversal chains are developmentally basal, they are evolutionarily derived through the loss of zooid torsion. Our findings suggest that locomotory efficiency is not strongly selected for across salps, and might be driven by ecological trade-offs with other traits.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
+            </div>
+          </section>
 
-              <!-- Media Item 4 - Left Image -->
-              <div class="media-card left-image">
-                <div class="media-image">
-                  <a href="#" target="_blank">
-                    <img src="images/media-podcast.jpg" alt="Podcast Interview" loading="lazy">
-                  </a>
-                </div>
-                <div class="media-content">
-                  <h4>Life in the Open Ocean Podcast</h4>
-                  <p><em>Ocean Science Podcast Network</em> - 2023</p>
-                  <p>In-depth conversation about my research on gelatinous zooplankton, the challenges of studying deep-sea organisms, and the importance of understanding marine food webs.</p>
-                  <p><a href="#" target="_blank">Listen to the episode →</a></p>
+          <!-- Talk 2: Yale Peabody Museum 2021 (Video) -->
+          <section data-test="page-section" data-section-theme="black-bold" class="page-section layout-engine-section background-width--full-bleed content-width--medium horizontal-alignment--center vertical-alignment--middle black-bold" data-section-id="6356d5bf7bdad84d60c1c4fe" data-controller="SectionWrapperController" style="min-height: 40vh;">
+            <div class="section-border">
+              <div class="section-background"></div>
+            </div>
+            <div class="content-wrapper" style="padding-top: calc(40vmax / 10); padding-bottom: calc(40vmax / 10);">
+              <div class="content">
+                <div class="sqs-layout sqs-grid-12 columns-12" data-type="page-section" id="page-section-6356d5bf7bdad84d60c1c4fe">
+                  <div class="row sqs-row">
+                    <div class="col sqs-col-12 span-12">
+                      <div class="sqs-block video-block sqs-block-video" data-block-type="32" id="block-190d2e11b0a9d8684948">
+                        <div class="sqs-block-content">
+                          <div class="intrinsic" style="max-width:100%">
+                            <div class="embed-block-wrapper" style="padding-bottom:56.20609%;">
+                              <div class="sqs-video-wrapper video-none" data-provider-name="YouTube" data-html='<iframe src="//www.youtube.com/embed/C6flnHnymQ8?wmode=opaque" height="480" width="854" scrolling="no" frameborder="0" allowfullscreen></iframe>'>
+                                <div class="intrinsic">
+                                  <div class="intrinsic-inner" style="padding-bottom: 56.2061%;">
+                                    <div class="sqs-video-overlay" style="opacity: 1;">
+                                      <img data-src="images/talks/yale-peabody-thumb.png" data-load="false" data-image-focal-point="0.5,0.5">
+                                      <div class="sqs-video-opaque"></div>
+                                      <div class="sqs-video-icon" tabindex="0" role="button" aria-label="Play"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-26ea6573d315b1bd6c7f">
+                        <div class="sqs-block-content">
+                          <div class="sqs-html-content">
+                            <h3 style="white-space: pre-wrap;" class="preFade">Yale Peabody Museum, 2021, New Haven, CT</h3>
+                            <h4 style="white-space: pre-wrap;" class="preFade">Shaped to Kill: The Evolution of Siphonophores' Secret Weapons for Prey Capture in the Open Ocean</h4>
+                            <p class="preFade" style="white-space: pre-wrap;">Predatory specialization is often associated with the evolution of modifications in the morphology of the prey-capture apparatus. Specialization has been considered an evolutionary "dead end" due to the constraints associated with these morphological changes. However, in predators like siphonophores, armed with modular structures used exclusively for prey capture, this assumption is challenged. Siphonophores are close relatives of common jellyfish and are abundant predators that capture prey using complex batteries of stinging cells. My results show that siphonophores can evolve generalism and new prey-type specializations by convergently modifying the morphology, shifting towards different optima, and adjusting the evolutionary correlations between different parts of their stinging batteries. These findings demonstrate how studying unfamiliar open-ocean predators can reveal novel patterns and mechanisms in the evolution of specialization that shape oceanic food-web structure.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
+            </div>
+          </section>
 
-              <!-- Media Item 5 - Right Image -->
-              <div class="media-card right-image">
-                <div class="media-image">
-                  <a href="#" target="_blank">
-                    <img src="images/media-dna-barcoding.jpg" alt="DNA Metabarcoding Feature" loading="lazy">
-                  </a>
-                </div>
-                <div class="media-content">
-                  <h4>Unveiling Hidden Ocean Food Webs</h4>
-                  <p><em>Science News</em> - 2022</p>
-                  <p>Feature article on our use of DNA metabarcoding to characterize siphonophore diets, revealing previously unknown connections in the pelagic food web.</p>
-                  <p><a href="#" target="_blank">Read the article →</a></p>
+          <!-- Talk 3: Evolution 2019 (Video) -->
+          <section data-test="page-section" data-section-theme="black-bold" class="page-section layout-engine-section background-width--full-bleed content-width--medium horizontal-alignment--center vertical-alignment--middle black-bold" data-section-id="61aa5c1e22b8cd2962548d70" data-controller="SectionWrapperController" style="min-height: 40vh;">
+            <div class="section-border">
+              <div class="section-background"></div>
+            </div>
+            <div class="content-wrapper" style="padding-top: calc(40vmax / 10); padding-bottom: calc(40vmax / 10);">
+              <div class="content">
+                <div class="sqs-layout sqs-grid-12 columns-12" data-type="page-section" id="page-section-61aa5c1e22b8cd2962548d70">
+                  <div class="row sqs-row">
+                    <div class="col sqs-col-12 span-12">
+                      <div class="sqs-block video-block sqs-block-video" data-block-type="32" id="block-b261e9bddeccc421247f">
+                        <div class="sqs-block-content">
+                          <div class="sqs-video-wrapper video-none" data-provider-name="" data-html='<iframe src="//www.youtube.com/embed/yWT4WfpMWUY?wmode=opaque" height="480" scrolling="no" frameborder="0" allowfullscreen></iframe>'>
+                            <div class="intrinsic">
+                              <div class="intrinsic-inner" style="padding-bottom: 56.3%;">
+                                <div class="sqs-video-overlay" style="opacity: 1;">
+                                  <img data-src="images/talks/evolution-2019-thumb.png" data-load="false" data-image-focal-point="0.5,0.5">
+                                  <div class="sqs-video-opaque"></div>
+                                  <div class="sqs-video-icon" tabindex="0" role="button" aria-label="Play"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-3b465ad54bf302fbeb32">
+                        <div class="sqs-block-content">
+                          <div class="sqs-html-content">
+                            <h3 style="white-space: pre-wrap;" class="preFade">Evolution 2019, Providence RI</h3>
+                            <h4 style="white-space: pre-wrap;" class="preFade">The evolution of siphonophore tentacles as tools for prey capture</h4>
+                            <p class="preFade" style="white-space: pre-wrap;">Siphonophores have the most complex and regularly organized nematocyst batteries of all Cnidaria. These structures are held on the tentacle side branches called tentilla.  Tentilla serve as the principal organs for prey capture, making siphonophores an ideal system for the study of trophic specialization from an evolutionary approach. Here we describe the morphology of siphonophore tentilla and nematocysts, identify patterns in the evolutionary history of siphonophore cnidoband and nematocyst morphologies, and elucidate the relationships between these and predatory specialization. Unlike more familiar predators like vertebrates, the siphonophore prey capture apparatus is functionally, spatially, and developmentally isolated from the rest of the body. We hypothesize this allows siphonophores to evolve extreme morphological adaptations to shift between dietary specializations. Understanding the evolutionary history of the prey capture apparatus is critical to contextualize the role of morphological diversity in the determination of food web structure.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
+            </div>
+          </section>
 
-              <!-- Media Item 6 - Left Image -->
-              <div class="media-card left-image">
-                <div class="media-image">
-                  <a href="#" target="_blank">
-                    <img src="images/media-outreach.jpg" alt="Science Outreach" loading="lazy">
-                  </a>
-                </div>
-                <div class="media-content">
-                  <h4>Bringing Ocean Science to the Public</h4>
-                  <p><em>University of Oregon Science Communications</em> - 2023</p>
-                  <p>Coverage of our public outreach efforts, including school visits, museum exhibitions, and community presentations about marine biology and ocean conservation.</p>
-                  <p><a href="#" target="_blank">Learn more →</a></p>
+          <!-- Talk 4: eDSBS 2020 (Video) -->
+          <section data-test="page-section" data-section-theme="black-bold" class="page-section layout-engine-section background-width--full-bleed content-width--medium horizontal-alignment--center vertical-alignment--middle black-bold" data-section-id="6025acabe9d463373b4748c0" data-controller="SectionWrapperController" style="min-height: 40vh;">
+            <div class="section-border">
+              <div class="section-background"></div>
+            </div>
+            <div class="content-wrapper" style="padding-top: calc(40vmax / 10); padding-bottom: calc(40vmax / 10);">
+              <div class="content">
+                <div class="sqs-layout sqs-grid-12 columns-12" data-type="page-section" id="page-section-6025acabe9d463373b4748c0">
+                  <div class="row sqs-row">
+                    <div class="col sqs-col-12 span-12">
+                      <div class="sqs-block video-block sqs-block-video" data-block-type="32" id="block-yui_3_17_2_1_1613143720017_11599">
+                        <div class="sqs-block-content">
+                          <div class="intrinsic" style="max-width:100%">
+                            <div class="embed-block-wrapper" style="padding-bottom:62.5%;">
+                              <div class="sqs-video-wrapper video-none" data-provider-name="Vimeo" data-html='<iframe src="https://player.vimeo.com/video/511636675?app_id=122963" width="640" height="400" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="eDSBS 2020 - Characterizing the Diets of Siphonophores using DNA Metabarcoding"></iframe>'>
+                                <div class="intrinsic">
+                                  <div class="intrinsic-inner" style="padding-bottom: 62.5%;">
+                                    <iframe src="https://player.vimeo.com/video/511636675?app_id=122963" width="640" height="400" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="eDSBS 2020 - Characterizing the Diets of Siphonophores using DNA Metabarcoding"></iframe>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1613143720017_10290">
+                        <div class="sqs-block-content">
+                          <div class="sqs-html-content">
+                            <h3 style="white-space: pre-wrap;" class="preFade">eDSBS 2020</h3>
+                            <h4 style="white-space: pre-wrap;" class="preFade">Characterizing the Diets of Siphonophores using DNA Metabarcoding</h4>
+                            <p class="preFade" style="white-space: pre-wrap;">Siphonophores are abundant and diverse predators in the Offshore Central California Current (OCCC) ecosystem. Due to limited access to the deep midwater environment, little is known about the diets of most deep-dwelling species. In this study, we perform DNA metabarcoding of the gut contents of 27 siphonophore species across the water column and characterize their diets. We collected siphonophore specimens using blue water dives and ROV dives. We extracted DNA from the feeding bodies, then amplified and sequenced six barcode markers along the 18S gene. OTUs are being assigned to prey taxa using a local zooplankton database of 18S amplicons.  Our results may reveal hidden links between mesozooplankton and higher trophic levels in the midwater food-web. This study will improve our understanding of the role of siphonophores in the open ocean, and the importance of their local species diversity in the OCCC for nutrient flow and ecosystem functioning.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-
             </div>
           </section>
 
@@ -343,31 +449,34 @@
       </main>
 
       <footer class="sections" id="footer-sections">
-        <section data-test="page-section" class="page-section dark" style="min-height:20vh;padding:40px 20px;background-color:#1a1a1a;">
-          <div class="content-wrapper">
+        <section data-test="page-section" data-section-theme="dark" class="page-section layout-engine-section background-width--full-bleed content-width--wide horizontal-alignment--center vertical-alignment--middle dark" data-section-id="6025ab23a616010b68cda8ec" data-controller="SectionWrapperController" style="min-height: 20vh;">
+          <div class="section-border">
+            <div class="section-background"></div>
+          </div>
+          <div class="content-wrapper" style="padding-top: calc(20vmax / 10); padding-bottom: calc(20vmax / 10);">
             <div class="content">
-              <div class="sqs-layout sqs-grid-12 columns-12">
+              <div class="sqs-layout sqs-grid-12 columns-12" data-type="page-section" id="page-section-6025ab23a616010b68cda8ec">
                 <div class="row sqs-row">
                   <div class="col sqs-col-12 span-12">
-                    <div class="sqs-block html-block">
-                      <div class="sqs-block-content">
+                    <div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-8ac58ed9e79e6ad0f525">
+                      <div class="sqs-block-content preFade">
                         <div class="sqs-html-content">
-                          <p style="text-align:center;white-space:pre-wrap;color:#fff;">Institute of Research and Innovation in Biomedical Sciences of Cadiz INiBICA | 21, Avda. Ana de Viya, 21 11009 Cádiz. Hospital Universitario Puerta del Mar damianserrano.alejandro@gmail.com</p>
+                          <p style="text-align: center; white-space: pre-wrap;" class="preFade">1479 Onyx Bridge, Institute of Ecology and Evolution, University of Oregon, Eugene OR, 97401   |   adamians@uoregon.edu</p>
                         </div>
                       </div>
                     </div>
-                    <div class="sqs-block socialaccountlinks-v2-block">
-                      <div class="sqs-block-content">
-                        <div class="sqs-svg-icon--outer social-icon-alignment-center">
+                    <div class="sqs-block socialaccountlinks-v2-block sqs-block-socialaccountlinks-v2" data-block-type="54" id="block-yui_3_17_2_1_1613157926881_18254">
+                      <div class="sqs-block-content preFade">
+                        <div class="sqs-svg-icon--outer social-icon-alignment-center social-icons-color- social-icons-size-small social-icons-style-regular">
                           <nav class="sqs-svg-icon--list">
-                            <a href="https://www.linkedin.com/in/alejandro-dami%C3%A1n-serrano-b0925162/" target="_blank" class="sqs-svg-icon--wrapper" aria-label="LinkedIn">
+                            <a href="https://www.linkedin.com/in/alejandro-dami%C3%A1n-serrano-b0925162/" target="_blank" class="sqs-svg-icon--wrapper linkedin-unauth" aria-label="LinkedIn">
                               <div>
                                 <svg class="sqs-svg-icon--social" viewBox="0 0 64 64">
                                   <use class="sqs-use--icon" xlink:href="#linkedin-unauth-icon"></use>
                                 </svg>
                               </div>
                             </a>
-                            <a href="https://twitter.com/planktomancer" target="_blank" class="sqs-svg-icon--wrapper" aria-label="Twitter">
+                            <a href="https://twitter.com/planktomancer" target="_blank" class="sqs-svg-icon--wrapper twitter-unauth" aria-label="Twitter">
                               <div>
                                 <svg class="sqs-svg-icon--social" viewBox="0 0 64 64">
                                   <use class="sqs-use--icon" xlink:href="#twitter-unauth-icon"></use>
@@ -387,9 +496,13 @@
       </footer>
     </div>
 
-    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display:none">
-      <symbol id="linkedin-unauth-icon" viewBox="0 0 64 64"><path d="M20.4,44h5.4V26.6h-5.4V44z M23.1,18c-1.7,0-3.1,1.4-3.1,3.1c0,1.7,1.4,3.1,3.1,3.1 c1.7,0,3.1-1.4,3.1-3.1C26.2,19.4,24.8,18,23.1,18z M39.5,26.2c-2.6,0-4.4,1.4-5.1,2.8h-0.1v-2.4h-5.2V44h5.4v-8.6 c0-2.3,0.4-4.5,3.2-4.5c2.8,0,2.8,2.6,2.8,4.6V44H46v-9.5C46,29.8,45,26.2,39.5,26.2z"/></symbol>
-      <symbol id="twitter-unauth-icon" viewBox="0 0 64 64"><path d="M48,22.1c-1.2,0.5-2.4,0.9-3.8,1c1.4-0.8,2.4-2.1,2.9-3.6c-1.3,0.8-2.7,1.3-4.2,1.6 C41.7,19.8,40,19,38.2,19c-3.6,0-6.6,2.9-6.6,6.6c0,0.5,0.1,1,0.2,1.5c-5.5-0.3-10.3-2.9-13.5-6.9c-0.6,1-0.9,2.1-0.9,3.3 c0,2.3,1.2,4.3,2.9,5.5c-1.1,0-2.1-0.3-3-0.8c0,0,0,0.1,0,0.1c0,3.2,2.3,5.8,5.3,6.4c-0.6,0.1-1.1,0.2-1.7,0.2c-0.4,0-0.8,0-1.2-0.1 c0.8,2.6,3.3,4.5,6.1,4.6c-2.2,1.8-5.1,2.8-8.2,2.8c-0.5,0-1.1,0-1.6-0.1c2.9,1.9,6.4,2.9,10.1,2.9c12.1,0,18.7-10,18.7-18.7 c0-0.3,0-0.6,0-0.8C46,24.5,47.1,23.4,48,22.1z"/></symbol>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display:none" data-usage="social-icons-svg">
+      <symbol id="linkedin-unauth-icon" viewBox="0 0 64 64">
+        <path d="M20.4,44h5.4V26.6h-5.4V44z M23.1,18c-1.7,0-3.1,1.4-3.1,3.1c0,1.7,1.4,3.1,3.1,3.1 c1.7,0,3.1-1.4,3.1-3.1C26.2,19.4,24.8,18,23.1,18z M39.5,26.2c-2.6,0-4.4,1.4-5.1,2.8h-0.1v-2.4h-5.2V44h5.4v-8.6 c0-2.3,0.4-4.5,3.2-4.5c2.8,0,2.8,2.6,2.8,4.6V44H46v-9.5C46,29.8,45,26.2,39.5,26.2z"/>
+      </symbol>
+      <symbol id="twitter-unauth-icon" viewBox="0 0 64 64">
+        <path d="M48,22.1c-1.2,0.5-2.4,0.9-3.8,1c1.4-0.8,2.4-2.1,2.9-3.6c-1.3,0.8-2.7,1.3-4.2,1.6 C41.7,19.8,40,19,38.2,19c-3.6,0-6.6,2.9-6.6,6.6c0,0.5,0.1,1,0.2,1.5c-5.5-0.3-10.3-2.9-13.5-6.9c-0.6,1-0.9,2.1-0.9,3.3 c0,2.3,1.2,4.3,2.9,5.5c-1.1,0-2.1-0.3-3-0.8c0,0,0,0.1,0,0.1c0,3.2,2.3,5.8,5.3,6.4c-0.6,0.1-1.1,0.2-1.7,0.2c-0.4,0-0.8,0-1.2-0.1 c0.8,2.6,3.3,4.5,6.1,4.6c-2.2,1.8-5.1,2.8-8.2,2.8c-0.5,0-1.1,0-1.6-0.1c2.9,1.9,6.4,2.9,10.1,2.9c12.1,0,18.7-10,18.7-18.7 c0-0.3,0-0.6,0-0.8C46,24.5,47.1,23.4,48,22.1z"/>
+      </symbol>
     </svg>
   </body>
 </html>
