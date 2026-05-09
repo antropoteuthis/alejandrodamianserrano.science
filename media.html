@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
+    <base href="./">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
@@ -23,6 +24,52 @@
     <style>
         .top-bun, .patty, .bottom-bun {
             height: 1px;
+        }
+        
+        /* Hero section specific styles */
+        .hero-section {
+            position: relative;
+            min-height: 60vh;
+        }
+        
+        .hero-section .section-background img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50.55% 36.11%;
+        }
+        
+        /* Image card styles */
+        .image-card-wrapper {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 2rem;
+            margin-top: 1rem;
+        }
+        
+        .image-card h3 {
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Audio player styles */
+        audio {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+        
+        /* Video wrapper styles */
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+        
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
         }
     </style>
 </head>
@@ -225,11 +272,17 @@
         <main id="page" class="container" role="main">
             <article class="sections" id="sections" data-page-sections="media">
                 
-                <!-- Hero Section -->
-                <section data-test="page-section" data-section-theme="black-bold" class="page-section layout-engine-section background-width--full-bleed section-height--medium content-width--medium horizontal-alignment--center vertical-alignment--middle has-background black-bold">
+                <!-- Hero Section with MBARI Photo -->
+                <section data-test="page-section" data-section-theme="black-bold" class="page-section hero-section layout-engine-section background-width--full-bleed section-height--medium content-width--medium horizontal-alignment--center vertical-alignment--middle has-background black-bold">
                     <div class="section-border">
                         <div class="section-background">
-                            <img src="images/vermillion_photos_v2_x2.jpg" alt="Media Hero" style="display:block;object-fit:cover;width:100%;height:100%;">
+                            <img src="https://images.squarespace-cdn.com/content/v1/6025ab22a616010b68cda8b9/1613147422641-TIAIOE7TRUXYSHVYXN1N/vermillion_photos_v2_x2+%281%29.jpg" 
+                                 alt="Siphonophore underwater - MBARI" 
+                                 srcset="https://images.squarespace-cdn.com/content/v1/6025ab22a616010b68cda8b9/1613147422641-TIAIOE7TRUXYSHVYXN1N/vermillion_photos_v2_x2+%281%29.jpg?format=500w 500w,
+                                         https://images.squarespace-cdn.com/content/v1/6025ab22a616010b68cda8b9/1613147422641-TIAIOE7TRUXYSHVYXN1N/vermillion_photos_v2_x2+%281%29.jpg?format=1000w 1000w,
+                                         https://images.squarespace-cdn.com/content/v1/6025ab22a616010b68cda8b9/1613147422641-TIAIOE7TRUXYSHVYXN1N/vermillion_photos_v2_x2+%281%29.jpg?format=1500w 1500w,
+                                         https://images.squarespace-cdn.com/content/v1/6025ab22a616010b68cda8b9/1613147422641-TIAIOE7TRUXYSHVYXN1N/vermillion_photos_v2_x2+%281%29.jpg?format=2500w 2500w"
+                                 sizes="100vw">
                             <div class="section-background-overlay" style="opacity: 0;"></div>
                         </div>
                     </div>
@@ -290,10 +343,8 @@
                                             <div class="col sqs-col-6 span-6">
                                                 <div class="sqs-block video-block sqs-block-video">
                                                     <div class="sqs-block-content">
-                                                        <div class="intrinsic">
-                                                            <div class="embed-block-wrapper" style="padding-bottom:56.25%;">
-                                                                <iframe src="https://www.youtube.com/embed/6eYTQGSe_HA" frameborder="0" allowfullscreen></iframe>
-                                                            </div>
+                                                        <div class="video-wrapper">
+                                                            <iframe src="https://www.youtube.com/embed/6eYTQGSe_HA" frameborder="0" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -301,10 +352,8 @@
                                             <div class="col sqs-col-6 span-6">
                                                 <div class="sqs-block video-block sqs-block-video">
                                                     <div class="sqs-block-content">
-                                                        <div class="intrinsic">
-                                                            <div class="embed-block-wrapper" style="padding-bottom:56.25%;">
-                                                                <iframe src="https://www.youtube.com/embed/wv_RL8acLWA" frameborder="0" allowfullscreen></iframe>
-                                                            </div>
+                                                        <div class="video-wrapper">
+                                                            <iframe src="https://www.youtube.com/embed/wv_RL8acLWA" frameborder="0" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -330,7 +379,7 @@
                                         <div class="sqs-block html-block sqs-block-html">
                                             <div class="sqs-block-content">
                                                 <div class="sqs-html-content">
-                                                    <h2><a href="https://radiocienciayjusticia.com/">Radio Poder - El sonido de la ciencia y la justicia</a></h2>
+                                                    <h2><a href="https://radiocienciayjusticia.com/" target="_blank">Radio Poder - El sonido de la ciencia y la justicia</a></h2>
                                                     <p>Alejandro Damian-Serrano habla sobre las criaturas fascinantes del mar y cómo absorben el carbono.</p>
                                                 </div>
                                             </div>
@@ -341,11 +390,13 @@
                                             <div class="sqs-block-content">
                                                 <div class="sqs-audio-embed">
                                                     <audio controls style="width: 100%;">
-                                                        <source src="audio/week-5-alejandro-jellyfish_mixdown-1.mp3" type="audio/mpeg">
+                                                        <source src="https://static1.squarespace.com/static/6025ab22a616010b68cda8b9/t/651c5bb1e800732efddf6cf1/1696357317733/week-5-alejandro-jellyfish_mixdown-1.mp3" type="audio/mpeg">
                                                         Your browser does not support the audio element.
                                                     </audio>
-                                                    <p><strong>Criaturas fascinantes del mar y cómo absorben el carbono.</strong><br>
-                                                    Alejandro Damian-Serrano</p>
+                                                    <div style="margin-top: 0.5rem;">
+                                                        <div style="font-weight: 600;">Criaturas fascinantes del mar y cómo absorben el carbono.</div>
+                                                        <div style="color: #666;">Alejandro Damian-Serrano</div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -370,8 +421,13 @@
                                             <div class="sqs-block-content">
                                                 <figure class="sqs-block-image-figure image-block-outer-wrapper">
                                                     <div class="intrinsic">
-                                                        <a href="https://open.spotify.com/episode/3RWpwE9m1w15FeBB8gTuDI" class="sqs-block-image-link">
-                                                            <img src="images/ecusa-podcast.png" alt="ECUSA Podcast" style="width:100%;">
+                                                        <a href="https://open.spotify.com/episode/3RWpwE9m1w15FeBB8gTuDI" target="_blank" class="sqs-block-image-link">
+                                                            <img src="https://images.squarespace-cdn.com/content/v1/6025ab22a616010b68cda8b9/7f584623-ba23-4a90-b2bd-92e637dcb5e6/Screen+Shot+2021-11-23+at+11.32.21+AM.png" 
+                                                                 alt="ECUSA Podcast - Buceando y Divulgando Entre Sifonóforos"
+                                                                 srcset="https://images.squarespace-cdn.com/content/v1/6025ab22a616010b68cda8b9/7f584623-ba23-4a90-b2bd-92e637dcb5e6/Screen+Shot+2021-11-23+at+11.32.21+AM.png?format=500w 500w,
+                                                                         https://images.squarespace-cdn.com/content/v1/6025ab22a616010b68cda8b9/7f584623-ba23-4a90-b2bd-92e637dcb5e6/Screen+Shot+2021-11-23+at+11.32.21+AM.png?format=1000w 1000w,
+                                                                         https://images.squarespace-cdn.com/content/v1/6025ab22a616010b68cda8b9/7f584623-ba23-4a90-b2bd-92e637dcb5e6/Screen+Shot+2021-11-23+at+11.32.21+AM.png?format=1500w 1500w"
+                                                                 style="width:100%;">
                                                         </a>
                                                     </div>
                                                     <figcaption class="image-card-wrapper">
@@ -408,8 +464,13 @@
                                             <div class="sqs-block-content">
                                                 <figure class="sqs-block-image-figure image-block-outer-wrapper">
                                                     <div class="intrinsic">
-                                                        <a href="https://www.ecusa.es/las-armas-secretas-de-los-sifonoforos/" class="sqs-block-image-link">
-                                                            <img src="images/ecusa-article.png" alt="ECUSA Article" style="width:100%;">
+                                                        <a href="https://www.ecusa.es/las-armas-secretas-de-los-sifonoforos/" target="_blank" class="sqs-block-image-link">
+                                                            <img src="https://images.squarespace-cdn.com/content/v1/6025ab22a616010b68cda8b9/1615939470604-44ZY9227G083K1307962/Screen+Shot+2021-03-16+at+8.04.12+PM.png" 
+                                                                 alt="ECUSA Article - Las armas secretas de los sifonóforos"
+                                                                 srcset="https://images.squarespace-cdn.com/content/v1/6025ab22a616010b68cda8b9/1615939470604-44ZY9227G083K1307962/Screen+Shot+2021-03-16+at+8.04.12+PM.png?format=500w 500w,
+                                                                         https://images.squarespace-cdn.com/content/v1/6025ab22a616010b68cda8b9/1615939470604-44ZY9227G083K1307962/Screen+Shot+2021-03-16+at+8.04.12+PM.png?format=1000w 1000w,
+                                                                         https://images.squarespace-cdn.com/content/v1/6025ab22a616010b68cda8b9/1615939470604-44ZY9227G083K1307962/Screen+Shot+2021-03-16+at+8.04.12+PM.png?format=1500w 1500w"
+                                                                 style="width:100%;">
                                                         </a>
                                                     </div>
                                                     <figcaption class="image-card-wrapper">
@@ -442,6 +503,9 @@
                             <div class="sqs-layout sqs-grid-12 columns-12">
                                 <div class="row sqs-row">
                                     <div class="col sqs-col-5 span-5">
+                                        <div class="sqs-block spacer-block sqs-block-spacer sized vsize-1">
+                                            <div class="sqs-block-content">&nbsp;</div>
+                                        </div>
                                         <div class="sqs-block html-block sqs-block-html">
                                             <div class="sqs-block-content">
                                                 <div class="sqs-html-content">
@@ -454,10 +518,8 @@
                                     <div class="col sqs-col-7 span-7">
                                         <div class="sqs-block video-block sqs-block-video">
                                             <div class="sqs-block-content">
-                                                <div class="intrinsic">
-                                                    <div class="embed-block-wrapper" style="padding-bottom:56.25%;">
-                                                        <iframe src="https://www.youtube.com/embed/gr1ps0ooDhU" frameborder="0" allowfullscreen></iframe>
-                                                    </div>
+                                                <div class="video-wrapper">
+                                                    <iframe src="https://www.youtube.com/embed/gr1ps0ooDhU" frameborder="0" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
                                                 </div>
                                             </div>
                                         </div>
@@ -480,10 +542,8 @@
                                     <div class="col sqs-col-7 span-7">
                                         <div class="sqs-block video-block sqs-block-video">
                                             <div class="sqs-block-content">
-                                                <div class="intrinsic">
-                                                    <div class="embed-block-wrapper" style="padding-bottom:56.25%;">
-                                                        <iframe src="https://www.youtube.com/embed/gX6h5m-RpoU" frameborder="0" allowfullscreen></iframe>
-                                                    </div>
+                                                <div class="video-wrapper">
+                                                    <iframe src="https://www.youtube.com/embed/gX6h5m-RpoU" frameborder="0" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
                                                 </div>
                                             </div>
                                         </div>
@@ -498,7 +558,7 @@
                                             <div class="sqs-block-content">
                                                 <div class="sqs-html-content">
                                                     <h2>Outrageous Acts of Science</h2>
-                                                    <p>My Twitter video of a live Cystisoma sp. amphipod from a deep-sea trawl off Hawaii went viral and ended up in a British T.V. show! (Season 9, Episode 3). See more in my IMDB: https://www.imdb.com/name/nm9672669/</p>
+                                                    <p>My Twitter video of a live Cystisoma sp. amphipod from a deep-sea trawl off Hawaii went viral and ended up in a British T.V. show! (Season 9, Episode 3). See more in my IMDB: <a href="https://www.imdb.com/name/nm9672669/" target="_blank">https://www.imdb.com/name/nm9672669/</a></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -571,5 +631,6 @@
         </symbol>
     </svg>
 
+    <script src="js/site.js"></script>
 </body>
 </html>
