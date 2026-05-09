@@ -38,15 +38,16 @@
             object-position: 50.55% 36.11%;
         }
         
-        /* Image card styles */
-        .image-card-wrapper {
-            background: rgba(255, 255, 255, 0.95);
-            padding: 2rem;
-            margin-top: 1rem;
+        /* Remove white box from image cards */
+        .image-card {
+            background-color: transparent !important;
+            box-shadow: none !important;
         }
-        
-        .image-card h3 {
-            margin-bottom: 0.5rem;
+
+        .image-card .image-title h4,
+        .image-card .image-subtitle p {
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
         }
         
         /* Audio player styles */
@@ -69,6 +70,12 @@
             left: 0;
             width: 100%;
             height: 100%;
+        }
+        
+        /* Google Scholar icon styling */
+        .google-scholar-icon {
+            width: 40px;
+            height: 40px;
         }
     </style>
 </head>
@@ -120,15 +127,14 @@
                         
                         <div class="header-actions header-actions--right">
                             <div class="header-actions-action header-actions-action--social">
-                                <a class="icon icon--fill header-icon" href="https://www.linkedin.com/in/alejandrodamianserrano/ " target="_blank" aria-label="LinkedIn">
+                                <a class="icon icon--fill header-icon" href="https://www.linkedin.com/in/alejandrodamianserrano/" target="_blank" aria-label="LinkedIn">
                                     <svg viewBox="23 23 64 64">
                                         <use xlink:href="#linkedin-unauth-icon" width="110" height="110"></use>
                                     </svg>
                                 </a>
-                                <a class="icon icon--fill header-icon" href="https://scholar.google.com/citations?user=5zDL15sAAAAJ&hl=en " target="_blank" aria-label="Google Scholar">
+                                <a class="icon icon--fill header-icon" href="https://scholar.google.com/citations?user=5zDL15sAAAAJ&hl=en" target="_blank" aria-label="Google Scholar">
                                     <svg viewBox="0 0 512 512" class="google-scholar-icon">
                                         <use xlink:href="#google-scholar-icon"></use>
-  
                                     </svg>
                                 </a>
                             </div>
@@ -187,12 +193,14 @@
                         
                         <div class="header-actions header-actions--right">
                             <div class="header-actions-action header-actions-action--social">
-                                <a class="icon icon--fill header-icon" href="https://www.linkedin.com/in/alejandrodamianserrano/ " target="_blank" aria-label="LinkedIn">
+                                <a class="icon icon--fill header-icon" href="https://www.linkedin.com/in/alejandrodamianserrano/" target="_blank" aria-label="LinkedIn">
                                     <svg viewBox="23 23 64 64">
                                         <use xlink:href="#linkedin-unauth-icon" width="110" height="110"></use>
                                     </svg>
                                 </a>
-
+                                <a class="icon icon--fill header-icon" href="https://scholar.google.com/citations?user=5zDL15sAAAAJ&hl=en" target="_blank" aria-label="Google Scholar">
+                                    <svg viewBox="0 0 512 512" class="google-scholar-icon">
+                                        <use xlink:href="#google-scholar-icon"></use>
                                     </svg>
                                 </a>
                             </div>
@@ -246,16 +254,16 @@
                                 
                                 <div class="header-menu-actions social-accounts">
                                     <div class="header-menu-actions-action header-menu-actions-action--social mobile">
-                                        <a class="icon icon--lg icon--fill header-icon" href="https://www.linkedin.com/in/alejandrodamianserrano/ " target="_blank" aria-label="LinkedIn">
+                                        <a class="icon icon--lg icon--fill header-icon" href="https://www.linkedin.com/in/alejandrodamianserrano/" target="_blank" aria-label="LinkedIn">
                                             <svg viewBox="23 23 64 64">
                                                 <use xlink:href="#linkedin-unauth-icon" width="110" height="110"></use>
                                             </svg>
                                         </a>
                                     </div>
                                     <div class="header-menu-actions-action header-menu-actions-action--social mobile">
-        <a class="icon icon--fill header-icon" href="https://scholar.google.com/citations?user=5zDL15sAAAAJ&hl=en " target="_blank" aria-label="Google Scholar">
-                                    <svg viewBox="0 0 512 512" class="google-scholar-icon">
-                                        <use xlink:href="#google-scholar-icon"></use>
+                                        <a class="icon icon--lg icon--fill header-icon" href="https://scholar.google.com/citations?user=5zDL15sAAAAJ&hl=en" target="_blank" aria-label="Google Scholar">
+                                            <svg viewBox="0 0 512 512" style="width: 48px; height: 48px;">
+                                                <use xlink:href="#google-scholar-icon"></use>
                                             </svg>
                                         </a>
                                     </div>
@@ -405,99 +413,99 @@
                     </div>
                 </section>
 
-           <!-- ECUSA Podcast Section -->
-<section data-test="page-section" data-section-theme="black-bold" class="page-section layout-engine-section background-width--full-bleed section-height--medium content-width--wide horizontal-alignment--center vertical-alignment--middle black-bold">
-    <div class="section-border">
-        <div class="section-background"></div>
-    </div>
-    <div class="content-wrapper">
-        <div class="content">
-            <div class="sqs-layout sqs-grid-12 columns-12">
-                <div class="row sqs-row">
-                    <div class="col sqs-col-12 span-12">
-                        <div class="sqs-block image-block sqs-block-image sqs-text-ready" data-block-type="5">
-                            <div class="sqs-block-content">
-                                <figure class="sqs-block-image-figure image-block-outer-wrapper image-block-v2 design-layout-card image-position-left sqs-text-ready">
-                                    <div class="intrinsic" style="max-width: 100%;">
-                                        <a href="https://open.spotify.com/episode/3RWpwE9m1w15FeBB8gTuDI" target="_blank" class="sqs-block-image-link">
-                                            <img src="https://images.squarespace-cdn.com/content/v1/6025ab22a616010b68cda8b9/7f584623-ba23-4a90-b2bd-92e637dcb5e6/Screen+Shot+2021-11-23+at+11.32.21+AM.png" 
-                                                 alt="ECUSA Podcast - Buceando y Divulgando Entre Sifonóforos"
-                                                 srcset="https://images.squarespace-cdn.com/content/v1/6025ab22a616010b68cda8b9/7f584623-ba23-4a90-b2bd-92e637dcb5e6/Screen+Shot+2021-11-23+at+11.32.21+AM.png?format=500w 500w,
-                                                         https://images.squarespace-cdn.com/content/v1/6025ab22a616010b68cda8b9/7f584623-ba23-4a90-b2bd-92e637dcb5e6/Screen+Shot+2021-11-23+at+11.32.21+AM.png?format=1000w 1000w,
-                                                         https://images.squarespace-cdn.com/content/v1/6025ab22a616010b68cda8b9/7f584623-ba23-4a90-b2bd-92e637dcb5e6/Screen+Shot+2021-11-23+at+11.32.21+AM.png?format=1500w 1500w"
-                                                 style="width: 100%; height: auto;">
-                                        </a>
-                                    </div>
-                                    <figcaption class="image-card-wrapper">
-                                        <div class="image-card">
-                                            <div class="image-title-wrapper">
-                                                <div class="image-title">
-                                                    <h4>Buceando y Divulgando Entre Sifonóforos</h4>
-                                                </div>
-                                            </div>
-                                            <div class="image-subtitle-wrapper">
-                                                <div class="image-subtitle">
-                                                    <p>Outreach podcast in Spanish for ECUSA (Españoles Científicos en USA) E-Visibility.</p>
-                                                </div>
+                <!-- ECUSA Podcast Section -->
+                <section data-test="page-section" data-section-theme="black-bold" class="page-section layout-engine-section background-width--full-bleed section-height--medium content-width--wide horizontal-alignment--center vertical-alignment--middle black-bold">
+                    <div class="section-border">
+                        <div class="section-background"></div>
+                    </div>
+                    <div class="content-wrapper">
+                        <div class="content">
+                            <div class="sqs-layout sqs-grid-12 columns-12">
+                                <div class="row sqs-row">
+                                    <div class="col sqs-col-12 span-12">
+                                        <div class="sqs-block image-block sqs-block-image sqs-text-ready" data-block-type="5">
+                                            <div class="sqs-block-content">
+                                                <figure class="sqs-block-image-figure image-block-outer-wrapper image-block-v2 design-layout-card image-position-left sqs-text-ready">
+                                                    <div class="intrinsic" style="max-width: 100%;">
+                                                        <a href="https://open.spotify.com/episode/3RWpwE9m1w15FeBB8gTuDI" target="_blank" class="sqs-block-image-link">
+                                                            <img src="https://images.squarespace-cdn.com/content/v1/6025ab22a616010b68cda8b9/7f584623-ba23-4a90-b2bd-92e637dcb5e6/Screen+Shot+2021-11-23+at+11.32.21+AM.png" 
+                                                                 alt="ECUSA Podcast - Buceando y Divulgando Entre Sifonóforos"
+                                                                 srcset="https://images.squarespace-cdn.com/content/v1/6025ab22a616010b68cda8b9/7f584623-ba23-4a90-b2bd-92e637dcb5e6/Screen+Shot+2021-11-23+at+11.32.21+AM.png?format=500w 500w,
+                                                                         https://images.squarespace-cdn.com/content/v1/6025ab22a616010b68cda8b9/7f584623-ba23-4a90-b2bd-92e637dcb5e6/Screen+Shot+2021-11-23+at+11.32.21+AM.png?format=1000w 1000w,
+                                                                         https://images.squarespace-cdn.com/content/v1/6025ab22a616010b68cda8b9/7f584623-ba23-4a90-b2bd-92e637dcb5e6/Screen+Shot+2021-11-23+at+11.32.21+AM.png?format=1500w 1500w"
+                                                                 style="width: 100%; height: auto;">
+                                                        </a>
+                                                    </div>
+                                                    <figcaption class="image-card-wrapper">
+                                                        <div class="image-card">
+                                                            <div class="image-title-wrapper">
+                                                                <div class="image-title">
+                                                                    <h4>Buceando y Divulgando Entre Sifonóforos</h4>
+                                                                </div>
+                                                            </div>
+                                                            <div class="image-subtitle-wrapper">
+                                                                <div class="image-subtitle">
+                                                                    <p>Outreach podcast in Spanish for ECUSA (Españoles Científicos en USA) E-Visibility.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
                                             </div>
                                         </div>
-                                    </figcaption>
-                                </figure>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+                </section>
 
-<!-- ECUSA Article Section -->
-<section data-test="page-section" data-section-theme="black-bold" class="page-section layout-engine-section background-width--full-bleed section-height--medium content-width--wide horizontal-alignment--center vertical-alignment--middle black-bold">
-    <div class="section-border">
-        <div class="section-background"></div>
-    </div>
-    <div class="content-wrapper">
-        <div class="content">
-            <div class="sqs-layout sqs-grid-12 columns-12">
-                <div class="row sqs-row">
-                    <div class="col sqs-col-12 span-12">
-                        <div class="sqs-block image-block sqs-block-image sqs-text-ready" data-block-type="5">
-                            <div class="sqs-block-content">
-                                <figure class="sqs-block-image-figure image-block-outer-wrapper image-block-v2 design-layout-card image-position-left sqs-text-ready">
-                                    <div class="intrinsic" style="max-width: 100%;">
-                                        <a href="https://www.ecusa.es/las-armas-secretas-de-los-sifonoforos/" target="_blank" class="sqs-block-image-link">
-                                            <img src="https://images.squarespace-cdn.com/content/v1/6025ab22a616010b68cda8b9/1615939470604-44ZY9227G083K1307962/Screen+Shot+2021-03-16+at+8.04.12+PM.png" 
-                                                 alt="ECUSA Article - Las armas secretas de los sifonóforos"
-                                                 srcset="https://images.squarespace-cdn.com/content/v1/6025ab22a616010b68cda8b9/1615939470604-44ZY9227G083K1307962/Screen+Shot+2021-03-16+at+8.04.12+PM.png?format=500w 500w,
-                                                         https://images.squarespace-cdn.com/content/v1/6025ab22a616010b68cda8b9/1615939470604-44ZY9227G083K1307962/Screen+Shot+2021-03-16+at+8.04.12+PM.png?format=1000w 1000w,
-                                                         https://images.squarespace-cdn.com/content/v1/6025ab22a616010b68cda8b9/1615939470604-44ZY9227G083K1307962/Screen+Shot+2021-03-16+at+8.04.12+PM.png?format=1500w 1500w"
-                                                 style="width: 100%; height: auto;">
-                                        </a>
-                                    </div>
-                                    <figcaption class="image-card-wrapper">
-                                        <div class="image-card">
-                                            <div class="image-title-wrapper">
-                                                <div class="image-title">
-                                                    <h4>Las armas secretas de los sifonóforos</h4>
-                                                </div>
-                                            </div>
-                                            <div class="image-subtitle-wrapper">
-                                                <div class="image-subtitle">
-                                                    <p>Outreach piece in Spanish for ECUSA (Españoles Científicos en USA) News & Views</p>
-                                                </div>
+                <!-- ECUSA Article Section -->
+                <section data-test="page-section" data-section-theme="black-bold" class="page-section layout-engine-section background-width--full-bleed section-height--medium content-width--wide horizontal-alignment--center vertical-alignment--middle black-bold">
+                    <div class="section-border">
+                        <div class="section-background"></div>
+                    </div>
+                    <div class="content-wrapper">
+                        <div class="content">
+                            <div class="sqs-layout sqs-grid-12 columns-12">
+                                <div class="row sqs-row">
+                                    <div class="col sqs-col-12 span-12">
+                                        <div class="sqs-block image-block sqs-block-image sqs-text-ready" data-block-type="5">
+                                            <div class="sqs-block-content">
+                                                <figure class="sqs-block-image-figure image-block-outer-wrapper image-block-v2 design-layout-card image-position-left sqs-text-ready">
+                                                    <div class="intrinsic" style="max-width: 100%;">
+                                                        <a href="https://www.ecusa.es/las-armas-secretas-de-los-sifonoforos/" target="_blank" class="sqs-block-image-link">
+                                                            <img src="https://images.squarespace-cdn.com/content/v1/6025ab22a616010b68cda8b9/1615939470604-44ZY9227G083K1307962/Screen+Shot+2021-03-16+at+8.04.12+PM.png" 
+                                                                 alt="ECUSA Article - Las armas secretas de los sifonóforos"
+                                                                 srcset="https://images.squarespace-cdn.com/content/v1/6025ab22a616010b68cda8b9/1615939470604-44ZY9227G083K1307962/Screen+Shot+2021-03-16+at+8.04.12+PM.png?format=500w 500w,
+                                                                         https://images.squarespace-cdn.com/content/v1/6025ab22a616010b68cda8b9/1615939470604-44ZY9227G083K1307962/Screen+Shot+2021-03-16+at+8.04.12+PM.png?format=1000w 1000w,
+                                                                         https://images.squarespace-cdn.com/content/v1/6025ab22a616010b68cda8b9/1615939470604-44ZY9227G083K1307962/Screen+Shot+2021-03-16+at+8.04.12+PM.png?format=1500w 1500w"
+                                                                 style="width: 100%; height: auto;">
+                                                        </a>
+                                                    </div>
+                                                    <figcaption class="image-card-wrapper">
+                                                        <div class="image-card">
+                                                            <div class="image-title-wrapper">
+                                                                <div class="image-title">
+                                                                    <h4>Las armas secretas de los sifonóforos</h4>
+                                                                </div>
+                                                            </div>
+                                                            <div class="image-subtitle-wrapper">
+                                                                <div class="image-subtitle">
+                                                                    <p>Outreach piece in Spanish for ECUSA (Españoles Científicos en USA) News & Views</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
                                             </div>
                                         </div>
-                                    </figcaption>
-                                </figure>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+                </section>
 
                 <!-- Blue Planet II Section -->
                 <section data-test="page-section" data-section-theme="black-bold" class="page-section layout-engine-section background-width--full-bleed section-height--medium content-width--wide horizontal-alignment--center vertical-alignment--middle black-bold">
@@ -600,14 +608,17 @@
                                         <div class="sqs-block-content">
                                             <div class="sqs-svg-icon--outer social-icon-alignment-center social-icons-size-small">
                                                 <nav class="sqs-svg-icon--list">
-                                                    <a href="https://www.linkedin.com/in/alejandro-dami%C3%A1n-serrano-b0925162/" target="_blank" class="sqs-svg-icon--wrapper linkedin-unauth" aria-label="LinkedIn">
+                                                    <a href="https://www.linkedin.com/in/alejandrodamianserrano/" target="_blank" class="sqs-svg-icon--wrapper linkedin-unauth" aria-label="LinkedIn">
                                                         <div>
                                                             <svg class="sqs-svg-icon--social" viewBox="0 0 64 64">
                                                                 <use class="sqs-use--icon" xlink:href="#linkedin-unauth-icon"></use>
                                                             </svg>
                                                         </div>
                                                     </a>
-   
+                                                    <a href="https://scholar.google.com/citations?user=5zDL15sAAAAJ&hl=en" target="_blank" class="sqs-svg-icon--wrapper google-scholar" aria-label="Google Scholar">
+                                                        <div>
+                                                            <svg class="sqs-svg-icon--social" viewBox="0 0 512 512">
+                                                                <use class="sqs-use--icon" xlink:href="#google-scholar-icon"></use>
                                                             </svg>
                                                         </div>
                                                     </a>
@@ -629,8 +640,9 @@
         <symbol id="linkedin-unauth-icon" viewBox="0 0 64 64">
             <path d="M20.4,44h5.4V26.6h-5.4V44z M23.1,18c-1.7,0-3.1,1.4-3.1,3.1c0,1.7,1.4,3.1,3.1,3.1 c1.7,0,3.1-1.4,3.1-3.1C26.2,19.4,24.8,18,23.1,18z M39.5,26.2c-2.6,0-4.4,1.4-5.1,2.8h-0.1v-2.4h-5.2V44h5.4v-8.6 c0-2.3,0.4-4.5,3.2-4.5c2.8,0,2.8,2.6,2.8,4.6V44H46v-9.5C46,29.8,45,26.2,39.5,26.2z"></path>
         </symbol>
-
-            <path d="M48,22.1c-1.2,0.5-2.4,0.9-3.8,1c1.4-0.8,2.4-2.1,2.9-3.6c-1.3,0.8-2.7,1.3-4.2,1.6 C41.7,19.8,40,19,38.2,19c-3.6,0-6.6,2.9-6.6,6.6c0,0.5,0.1,1,0.2,1.5c-5.5-0.3-10.3-2.9-13.5-6.9c-0.6,1-0.9,2.1-0.9,3.3 c0,2.3,1.2,4.3,2.9,5.5c-1.1,0-2.1-0.3-3-0.8c0,0,0,0.1,0,0.1c0,3.2,2.3,5.8,5.3,6.4c-0.6,0.1-1.1,0.2-1.7,0.2c-0.4,0-0.8,0-1.2-0.1 c0.8,2.6,3.3,4.5,6.1,4.6c-2.2,1.8-5.1,2.8-8.2,2.8c-0.5,0-1.1,0-1.6-0.1c2.9,1.9,6.4,2.9,10.1,2.9c12.1,0,18.7-10,18.7-18.7 c0-0.3,0-0.6,0-0.8C46,24.5,47.1,23.4,48,22.1z"></path>
+        <symbol id="google-scholar-icon" viewBox="0 0 512 512">
+            <path fill="currentColor" d="M390.9 298.5c0 0 0 .1 0 .1c9.2 19.4 14.3 41.2 14.3 64.3c0 84.9-68.8 153.7-153.7 153.7S97.8 447.8 97.8 362.9c0-84.9 68.8-153.7 153.7-153.7c16.1 0 31.8 2.5 46.4 7.2l45.1-45.1C318.6 157.9 287.9 150.1 256 150.1c-122.6 0-222.1 99.5-222.1 222.1S133.4 594.3 256 594.3s222.1-99.5 222.1-222.1c0-50.5-16.9-97.1-45.3-134.3l-42 42.7zm-2.6-96.6L288.1 302.1c22.5 31.2 35.9 69.5 35.9 111.1c0 105-85.1 190.1-190.1 190.1S-56.2 518.2-56.2 413.2S28.9 223.1 133.9 223.1c36.6 0 70.7 10.4 99.7 28.4L333.8 151.3l54.5 54.5z"/>
+            <path fill="currentColor" d="M286.3 302.1l102.2-99.2L334 148.4L231.7 251.6c29 14 54.1 34 70.6 50.5zM133.9 289.8c-68 0-123.4 55.3-123.4 123.4s55.3 123.4 123.4 123.4s123.4-55.3 123.4-123.4S201.9 289.8 133.9 289.8zm0 196.6c-40.4 0-73.2-32.8-73.2-73.2s32.8-73.2 73.2-73.2s73.2 32.8 73.2 73.2S174.3 486.4 133.9 486.4z"/>
         </symbol>
     </svg>
 
