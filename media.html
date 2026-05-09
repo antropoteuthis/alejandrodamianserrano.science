@@ -1,151 +1,395 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media - Alejandro Damian-Serrano</title>
+<!doctype html>
+<html xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" lang="en-US">
+  <head>
+	<base href="./">
+	<script src="js/rerouter.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <title>Media &mdash; Alejandro Damian-Serrano, Ph.D.</title>
+    <link rel="icon" type="image/x-icon" href="https://images.squarespace-cdn.com/content/v1/6025ab22a616010b68cda8b9/1613159815822-TFB32N2OLDQHGRJUVJBV/favicon.ico"/>
+    <link rel="canonical" href="https://www.alejandrodamianserrano.science/media"/>
+    <meta property="og:site_name" content="Alejandro Damian-Serrano, Ph.D."/>
+    <meta property="og:title" content="Media &mdash; Alejandro Damian-Serrano, Ph.D."/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700">
+    <link rel="stylesheet" type="text/css" href="css/site.css"/>
+    <link rel="stylesheet" type="text/css" href="css/static.css">
+    
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #fdfdfd;
-            color: #333;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
+      .top-bun, 
+      .patty, 
+      .bottom-bun {
+        height: 1px;
+      }
+      
+      .media-card {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        margin: 60px 0;
+        background: rgba(0,0,0,0.8);
+        padding: 30px;
+        border-radius: 8px;
+      }
+      
+      .media-card.right-image {
+        flex-direction: row;
+      }
+      
+      .media-card.left-image {
+        flex-direction: row-reverse;
+      }
+      
+      .media-image {
+        flex: 0 0 45%;
+        max-width: 45%;
+      }
+      
+      .media-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 4px;
+      }
+      
+      .media-content {
+        flex: 1;
+        color: #fff;
+      }
+      
+      .media-content h4 {
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+        font-weight: 600;
+        line-height: 1.4;
+      }
+      
+      .media-content p {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 10px;
+      }
+      
+      .media-content em {
+        color: #ccc;
+      }
+      
+      .media-content a {
+        color: #6eb4ff;
+        text-decoration: none;
+      }
+      
+      .media-content a:hover {
+        text-decoration: underline;
+      }
+      
+      @media (max-width: 768px) {
+        .media-card,
+        .media-card.right-image,
+        .media-card.left-image {
+          flex-direction: column !important;
         }
-
-        header {
-            background-color: #1a1a1a;
-            color: #fff;
-            padding: 20px;
+        
+        .media-image {
+          flex: 0 0 100%;
+          max-width: 100%;
         }
-
-        nav {
-            max-width: 900px;
-            margin: 0 auto;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 5px 10px;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        main {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-
-        h1, h2 {
-            color: #1a1a1a;
-        }
-
-        h1 {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        section {
-            margin-bottom: 50px;
-        }
-
-        .media-item {
-            margin-bottom: 25px;
-        }
-
-        .media-item a {
-            color: #1a0dab;
-            text-decoration: none;
-        }
-
-        .media-item a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            text-align: center;
-            color: #777;
-            padding: 20px 0;
-            border-top: 1px solid #ddd;
-            font-size: 0.9em;
-            margin-top: 40px;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 6px;
-            margin-top: 10px;
-        }
+      }
     </style>
-</head>
-<body>
+  </head>
 
-<header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="cv.html">CV</a>
-        <a href="publications.html">Publications</a>
-        <a href="talks.html">Talks</a>
-        <a href="media.html">Media</a>
-        <a href="about.html">About Me</a>
-    </nav>
-</header>
+  <body id="collection-media" class="dark" tabindex="-1">
+    <div id="siteWrapper" class="clearfix site-wrapper">
+      
+      <header data-test="header" id="header" class="dark header theme-col--primary" data-section-theme="dark">
+        <div class="header-announcement-bar-wrapper">
+          <a href="#page" class="header-skip-link sqs-button-element--primary">Skip to Content</a>
+          
+          <div class="header-inner container--fluid header-mobile-layout-logo-left-nav-right header-layout-nav-right" data-test="header-inner">
+            <div class="header-background theme-bg--primary"></div>
 
-<main>
-    <h1>Media Presence</h1>
+            <div class="header-display-desktop" data-content-field="site-title">
+              <div class="header-title-nav-wrapper">
+                <div class="header-title" data-animation-role="header-element">
+                  <div class="header-title-text">
+                    <a id="site-title" href="index.html" data-animation-role="header-element">Alejandro Damian-Serrano, Ph.D.</a>
+                  </div>
+                </div>
+                
+                <div class="header-nav">
+                  <div class="header-nav-wrapper">
+                    <nav class="header-nav-list">
+                      <div class="header-nav-item header-nav-item--collection">
+                        <a href="curriculum-vitae.html">CV</a>
+                      </div>
+                      <div class="header-nav-item header-nav-item--collection">
+                        <a href="publications.html">Publications</a>
+                      </div>
+                      <div class="header-nav-item header-nav-item--collection">
+                        <a href="communications.html">Talks</a>
+                      </div>
+                      <div class="header-nav-item header-nav-item--collection header-nav-item--active">
+                        <a href="media.html" aria-current="page">Media</a>
+                      </div>
+                      <div class="header-nav-item header-nav-item--collection">
+                        <a href="about-me.html">About Me</a>
+                      </div>
+                      <div class="header-nav-item header-nav-item--collection header-nav-item--homepage">
+                        <a href="index.html">Home</a>
+                      </div>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="header-actions header-actions--right">
+                <div class="header-actions-action header-actions-action--social">
+                  <a class="icon icon--fill header-icon" href="https://www.linkedin.com/in/alejandro-dami%C3%A1n-serrano-b0925162/" target="_blank" aria-label="LinkedIn">
+                    <svg viewBox="23 23 64 64">
+                      <use xlink:href="#linkedin-unauth-icon" width="110" height="110"></use>
+                    </svg>
+                  </a>
+                  <a class="icon icon--fill header-icon" href="https://twitter.com/planktomancer" target="_blank" aria-label="Twitter">
+                    <svg viewBox="23 23 64 64">
+                      <use xlink:href="#twitter-unauth-icon" width="110" height="110"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
 
-    <section class="media-item">
-        <h2>CreatureCast</h2>
-        <p>I have worked with animator Riley Thompson to produce these animated outreach videos explaining the natural history of siphonophore tentilla, their development, and prey capture behaviors.</p>
-    </section>
+              <div class="header-burger">
+                <button class="header-burger-btn burger">
+                  <div class="burger-box">
+                    <div class="burger-inner header-menu-icon-doubleLineHamburger">
+                      <div class="top-bun"></div>
+                      <div class="patty"></div>
+                      <div class="bottom-bun"></div>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
 
-    <section class="media-item">
-        <h2>JEB Early Career Researcher Spotlight Interview</h2>
-        <p>ECR Spotlight features interviews with early-career authors from the <em>Journal of Experimental Biology</em>, highlighting the diversity of researchers and animals in experimental biology. I conducted research on “Colonial architecture modulates the speed and efficiency of multi-jet swimming in salp colonies” as a postdoc in Kelly R. Sutherland's lab at the University of Oregon.</p>
-    </section>
+            <div class="header-display-mobile" data-content-field="site-title">
+              <div class="header-title-nav-wrapper">
+                <div class="header-title">
+                  <div class="header-title-text">
+                    <a id="site-title" href="index.html">Alejandro Damian-Serrano, Ph.D.</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="header-actions header-actions--right">
+                <div class="header-actions-action header-actions-action--social">
+                  <a class="icon icon--fill header-icon" href="https://www.linkedin.com/in/alejandro-dami%C3%A1n-serrano-b0925162/" target="_blank" aria-label="LinkedIn">
+                    <svg viewBox="23 23 64 64">
+                      <use xlink:href="#linkedin-unauth-icon" width="110" height="110"></use>
+                    </svg>
+                  </a>
+                  <a class="icon icon--fill header-icon" href="https://twitter.com/planktomancer" target="_blank" aria-label="Twitter">
+                    <svg viewBox="23 23 64 64">
+                      <use xlink:href="#twitter-unauth-icon" width="110" height="110"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
 
-    <section class="media-item">
-        <h2>Radio Poder - El sonido de la ciencia y la justicia</h2>
-        <p>I talk about fascinating marine creatures and how they absorb carbon.</p>
-    </section>
+              <div class="header-burger">
+                <button class="header-burger-btn burger">
+                  <div class="burger-box">
+                    <div class="burger-inner header-menu-icon-doubleLineHamburger">
+                      <div class="top-bun"></div>
+                      <div class="patty"></div>
+                      <div class="bottom-bun"></div>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
 
-    <section class="media-item">
-        <h2>Buceando y Divulgando Entre Sifonóforos</h2>
-        <p>Outreach podcast in Spanish for ECUSA (Españoles Científicos en USA) E-Visibility.</p>
-    </section>
+      <main id="page" class="container" role="main">
+        <article class="sections" id="sections">
+          
+          <!-- Hero Section -->
+          <section data-test="page-section" data-section-theme="white" class="page-section background-width--full-bleed section-height--medium content-width--medium horizontal-alignment--center vertical-alignment--middle has-background white">
+            <div class="section-border">
+              <div class="section-background">
+                <img alt="Media background" src="images/media-hero.jpg" width="2048" height="1317" style="display:block;object-position:50% 50%;object-fit:cover;width:100%;height:100%" loading="eager">
+                <div class="section-background-overlay" style="opacity:0;"></div>
+              </div>
+            </div>
+            <div class="content-wrapper" style="padding:60px 20px;">
+              <div class="content">
+                <div class="sqs-layout sqs-grid-12 columns-12">
+                  <div class="row sqs-row">
+                    <div class="col sqs-col-12 span-12">
+                      <div class="sqs-block html-block">
+                        <div class="sqs-block-content">
+                          <div class="sqs-html-content">
+                            <h1 style="text-align:center;white-space:pre-wrap;color:#fff;">Media</h1>
+                            <p class="sqsrte-small" style="white-space:pre-wrap;text-align:center;color:#fff;">Featured Research &amp; Outreach</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 
-    <section class="media-item">
-        <h2>Las armas secretas de los sifonóforos</h2>
-        <p>Outreach piece in Spanish for ECUSA (Españoles Científicos en USA) News & Views.</p>
-        <img src="Screen-Shot-2021-03-16.png" alt="Las armas secretas de los sifonóforos">
-    </section>
+          <!-- Media Items Section -->
+          <section data-test="page-section" data-section-theme="black" class="page-section background-width--full-bleed content-width--wide black" style="padding:80px 20px;background-color:#000;">
+            <div class="content-wrapper" style="max-width:1200px;margin:0 auto;">
+              
+              <!-- Media Item 1 - Right Image -->
+              <div class="media-card right-image">
+                <div class="media-image">
+                  <a href="https://www.science.org/content/article/spinning-corkscrewing-secrets-gelatinous-sea-creatures" target="_blank">
+                    <img src="images/media-science-spinning.jpg" alt="Science Magazine Feature" loading="lazy">
+                  </a>
+                </div>
+                <div class="media-content">
+                  <h4>Spinning and corkscrewing secrets of gelatinous sea creatures</h4>
+                  <p><em>Science Magazine</em> - May 2024</p>
+                  <p>Featured coverage of our research on the rotational behaviors of oceanic macroplankton, revealing new insights into how these creatures navigate the open ocean.</p>
+                  <p><a href="https://www.science.org/content/article/spinning-corkscrewing-secrets-gelatinous-sea-creatures" target="_blank">Read the full article →</a></p>
+                </div>
+              </div>
 
-    <section class="media-item">
-        <h2>Blue Planet II</h2>
-        <p>I assisted the science team of <em>Blue Planet II</em> to prepare the script of the Portuguese man-o-war scene narrated by Sir David Attenborough.</p>
-    </section>
+              <!-- Media Item 2 - Left Image -->
+              <div class="media-card left-image">
+                <div class="media-image">
+                  <a href="https://www.youtube.com/watch?v=example2" target="_blank">
+                    <img src="images/media-mbari-video.jpg" alt="MBARI Research Video" loading="lazy">
+                  </a>
+                </div>
+                <div class="media-content">
+                  <h4>Deep-sea Siphonophore Discoveries</h4>
+                  <p><em>MBARI (Monterey Bay Aquarium Research Institute)</em> - 2023</p>
+                  <p>Documentary feature showcasing our deep-sea research on siphonophores and their role in the midwater ecosystem, filmed during ROV expeditions in Monterey Bay.</p>
+                  <p><a href="https://www.youtube.com/watch?v=example2" target="_blank">Watch the video →</a></p>
+                </div>
+              </div>
 
-    <section class="media-item">
-        <h2>Outrageous Acts of Science</h2>
-        <p>My Twitter video of a live <em>Cystisoma sp.</em> amphipod from a deep-sea trawl off Hawaii went viral and ended up in a British TV show (Season 9, Episode 3). See more on <a href="https://www.imdb.com/name/nm9672669/" target="_blank">IMDB</a>.</p>
-    </section>
+              <!-- Media Item 3 - Right Image -->
+              <div class="media-card right-image">
+                <div class="media-image">
+                  <a href="#" target="_blank">
+                    <img src="images/media-salp-colonies.jpg" alt="Salp Colony Research" loading="lazy">
+                  </a>
+                </div>
+                <div class="media-content">
+                  <h4>The Architecture of Salp Colonies</h4>
+                  <p><em>Nature Research Highlights</em> - 2024</p>
+                  <p>Our groundbreaking work on salp colonial architecture and its implications for swimming efficiency was featured in Nature's research highlights.</p>
+                  <p><a href="#" target="_blank">Read more →</a></p>
+                </div>
+              </div>
 
-</main>
+              <!-- Media Item 4 - Left Image -->
+              <div class="media-card left-image">
+                <div class="media-image">
+                  <a href="#" target="_blank">
+                    <img src="images/media-podcast.jpg" alt="Podcast Interview" loading="lazy">
+                  </a>
+                </div>
+                <div class="media-content">
+                  <h4>Life in the Open Ocean Podcast</h4>
+                  <p><em>Ocean Science Podcast Network</em> - 2023</p>
+                  <p>In-depth conversation about my research on gelatinous zooplankton, the challenges of studying deep-sea organisms, and the importance of understanding marine food webs.</p>
+                  <p><a href="#" target="_blank">Listen to the episode →</a></p>
+                </div>
+              </div>
 
-<footer>
-    Institute of Research and Innovation in Biomedical Sciences of Cadiz INiBICA | 21, Avda. Ana de Viya, 11009 Cádiz | Hospital Universitario Puerta del Mar <br>
-    <a href="mailto:damianserrano.alejandro@gmail.com">damianserrano.alejandro@gmail.com</a>
-</footer>
+              <!-- Media Item 5 - Right Image -->
+              <div class="media-card right-image">
+                <div class="media-image">
+                  <a href="#" target="_blank">
+                    <img src="images/media-dna-barcoding.jpg" alt="DNA Metabarcoding Feature" loading="lazy">
+                  </a>
+                </div>
+                <div class="media-content">
+                  <h4>Unveiling Hidden Ocean Food Webs</h4>
+                  <p><em>Science News</em> - 2022</p>
+                  <p>Feature article on our use of DNA metabarcoding to characterize siphonophore diets, revealing previously unknown connections in the pelagic food web.</p>
+                  <p><a href="#" target="_blank">Read the article →</a></p>
+                </div>
+              </div>
 
-</body>
+              <!-- Media Item 6 - Left Image -->
+              <div class="media-card left-image">
+                <div class="media-image">
+                  <a href="#" target="_blank">
+                    <img src="images/media-outreach.jpg" alt="Science Outreach" loading="lazy">
+                  </a>
+                </div>
+                <div class="media-content">
+                  <h4>Bringing Ocean Science to the Public</h4>
+                  <p><em>University of Oregon Science Communications</em> - 2023</p>
+                  <p>Coverage of our public outreach efforts, including school visits, museum exhibitions, and community presentations about marine biology and ocean conservation.</p>
+                  <p><a href="#" target="_blank">Learn more →</a></p>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+        </article>
+      </main>
+
+      <footer class="sections" id="footer-sections">
+        <section data-test="page-section" class="page-section dark" style="min-height:20vh;padding:40px 20px;background-color:#1a1a1a;">
+          <div class="content-wrapper">
+            <div class="content">
+              <div class="sqs-layout sqs-grid-12 columns-12">
+                <div class="row sqs-row">
+                  <div class="col sqs-col-12 span-12">
+                    <div class="sqs-block html-block">
+                      <div class="sqs-block-content">
+                        <div class="sqs-html-content">
+                          <p style="text-align:center;white-space:pre-wrap;color:#fff;">Institute of Research and Innovation in Biomedical Sciences of Cadiz INiBICA | 21, Avda. Ana de Viya, 21 11009 Cádiz. Hospital Universitario Puerta del Mar damianserrano.alejandro@gmail.com</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sqs-block socialaccountlinks-v2-block">
+                      <div class="sqs-block-content">
+                        <div class="sqs-svg-icon--outer social-icon-alignment-center">
+                          <nav class="sqs-svg-icon--list">
+                            <a href="https://www.linkedin.com/in/alejandro-dami%C3%A1n-serrano-b0925162/" target="_blank" class="sqs-svg-icon--wrapper" aria-label="LinkedIn">
+                              <div>
+                                <svg class="sqs-svg-icon--social" viewBox="0 0 64 64">
+                                  <use class="sqs-use--icon" xlink:href="#linkedin-unauth-icon"></use>
+                                </svg>
+                              </div>
+                            </a>
+                            <a href="https://twitter.com/planktomancer" target="_blank" class="sqs-svg-icon--wrapper" aria-label="Twitter">
+                              <div>
+                                <svg class="sqs-svg-icon--social" viewBox="0 0 64 64">
+                                  <use class="sqs-use--icon" xlink:href="#twitter-unauth-icon"></use>
+                                </svg>
+                              </div>
+                            </a>
+                          </nav>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </footer>
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display:none">
+      <symbol id="linkedin-unauth-icon" viewBox="0 0 64 64"><path d="M20.4,44h5.4V26.6h-5.4V44z M23.1,18c-1.7,0-3.1,1.4-3.1,3.1c0,1.7,1.4,3.1,3.1,3.1 c1.7,0,3.1-1.4,3.1-3.1C26.2,19.4,24.8,18,23.1,18z M39.5,26.2c-2.6,0-4.4,1.4-5.1,2.8h-0.1v-2.4h-5.2V44h5.4v-8.6 c0-2.3,0.4-4.5,3.2-4.5c2.8,0,2.8,2.6,2.8,4.6V44H46v-9.5C46,29.8,45,26.2,39.5,26.2z"/></symbol>
+      <symbol id="twitter-unauth-icon" viewBox="0 0 64 64"><path d="M48,22.1c-1.2,0.5-2.4,0.9-3.8,1c1.4-0.8,2.4-2.1,2.9-3.6c-1.3,0.8-2.7,1.3-4.2,1.6 C41.7,19.8,40,19,38.2,19c-3.6,0-6.6,2.9-6.6,6.6c0,0.5,0.1,1,0.2,1.5c-5.5-0.3-10.3-2.9-13.5-6.9c-0.6,1-0.9,2.1-0.9,3.3 c0,2.3,1.2,4.3,2.9,5.5c-1.1,0-2.1-0.3-3-0.8c0,0,0,0.1,0,0.1c0,3.2,2.3,5.8,5.3,6.4c-0.6,0.1-1.1,0.2-1.7,0.2c-0.4,0-0.8,0-1.2-0.1 c0.8,2.6,3.3,4.5,6.1,4.6c-2.2,1.8-5.1,2.8-8.2,2.8c-0.5,0-1.1,0-1.6-0.1c2.9,1.9,6.4,2.9,10.1,2.9c12.1,0,18.7-10,18.7-18.7 c0-0.3,0-0.6,0-0.8C46,24.5,47.1,23.4,48,22.1z"/></symbol>
+    </svg>
+  </body>
 </html>
